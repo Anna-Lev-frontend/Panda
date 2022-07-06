@@ -60,10 +60,66 @@
 
 .text__design-by {
     margin: 0;
-    
+
 }
 
 .text__about-school {
     margin: 0;
+
+}
+/* 
+.animals-online {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #2A8086;
+}
+
+.animals-online::after {
+    content: "";
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    background-image: url(/images/bg-animal-online.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 40px;
+} */
+.main__section {
+    display: flex;
+}
     
+.animals-online {
+    padding: 10px 10px 10px 40px; 
+}
+.animals-online_title {
+    
+}
+   
+.animals-online__content {
+  
+}
+.animals-online__photo {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 50px;  
+}
+.how-it-works {
+    
+    padding:10px 10px 10px 80px;
+    font-size: 10px;
+}
+.how-it-works__content {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px 20px 100px;
+    
+    justify-content: space-between;
+    font-size: 5px;
+    text-align: center;
+}
+.how-it-works__title {
+    padding: 30px;
 }
