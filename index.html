@@ -5,231 +5,277 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="" type="image/png"> -->
+    <link rel="icon" href="/images/Logo-large.svg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./normolize.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Panda</title>
+    <title>ONLINE ZOO</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__title">Online ZOO</h1>
-        <img class="header__logo" src="./images/Logo-large.svg" alt="logo">
-        <nav class="header__navigation navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__item_active">
-                    <a class="navigation__link" href="#">ABOUT</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">MAP</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">ZOOS</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">CONTACT US</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">DESIGN</a>
-                </li>
-            </ul>
+    <div class="wrapper-greenblue">
+        <header class="header">
+            <h1 class="header__title">Online ZOO</h1>
+            <img class="header__logo" src="./images/Logo-large.svg" alt="logo">
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item navigation__item_active">
+                        <a class="navigation__link" href="#">ABOUT</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">MAP</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">ZOOS</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">CONTACT US</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">DESIGN</a>
+                    </li>
+                </ul>
 
-        </nav>
-        <aside class="header__buttons">
+            </nav>
+            <aside class="header__buttons">
 
-            <img class="header__search" src="./images/Frame.svg" alt="search">
-            <button class="header__button">LOG IN</button>
-            <button class="header__button">SIGN UP</button>
-        </aside>
-    </header>
-
+                <img class="header__search" src="./images/Frame.svg" alt="search">
+                <button class="header__button">LOG IN</button>
+                <button class="header__button">SIGN UP</button>
+            </aside>
+        </header>
+    </div>
     <main class="main">
+        <div class="wrapper-greenblue">
+            <section class="main__section animals-online">
 
-        <section class="main__section animals-online">
+                <div class="animals-online">
 
-            <div class="animals-online">
+                    <h1 class="animals-online__title">
+                        Watch your favorite <br>
+                        animals online
+                    </h1>
 
-                <h1 class="animals-online__title">
-                    Watch your favorite <br>
-                    animals online
+                    <button class="animals-online__button">Watch now</button>
+                </div>
+
+                <div class="animals-online__photo">
+
+                    <img src="/images/Panda.png" alt="Panda">
+                </div>
+            </section>
+        </div>
+
+
+        <div class="wrapper-white">
+            <section class="main__section how-it-works">
+                <h1 class="how-it-works__title">
+                    HOW IT WORKS
                 </h1>
 
-                <p class="animals-online__content">Observe different animals from around the world online in live
-                    time. Help <br>
-                    vulunteers to take a
-                    good care of animals, donate to your favorite ones.
-                </p>
-                <button class="header__button">Watch now</button>
+                <div class="how-it-works__content">
+                    <article class="how-it-works__content content__image">
+                        <img class="content__image" src="/images/binoculars.png" alt="binoculars">
+                    </article>
+                    <article class="how-it-works__content content__image">
+                        <img class="content__image" src="/images/dog-paw-print .png" alt="dog-paw-print">
+                    </article>
+                    <article class="how-it-works__content content__image">
+                        <img class="content__image" src="/images/trust.png" alt="trust">
+                    </article>
+                </div>
+                <div class="how-it-works__content">
+                    <div how-it-works__content content__title>
+                        <p class="content__title">
+                            Keep an eye on your favourite animals online
+                        </p>
+                    </div>
+                    <div how-it-works__content content__title>
+                        <p class="content__title">
+                            Become a part of the communtity
+                        </p>
+                    </div>
+                    <div how-it-works__content content__title>
+                        <p class="content__title">
+                            Support animals with the donations
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="wrapper-white">
+            <div class="main__illustration">
+                <img src="/images/Illustrations.svg" alt="illustration">
             </div>
+        </div>
 
-            <div class="animals-online__photo">
 
-                <img class="animals-online__SclipAni" src="/images/Pandas.png" alt="Panda">
-            </div>
-        </section>
+        <div class="wrapper-white">
+            <section class="main__section pets-in-zoo">
+                <header class="pets-in-zoo__header">
 
-        <section class="section__how-it-works">
-
-            <div class="how-it-works">
-                <article class="how-it-works__title">
-                    <h1>
-                        HOW IT WORKS
-                    </h1>
-                </article>
-            </div>
-
-            <div class="how-it-works__content">
-                <article class="how-it-works__binoculars">
-                    <img src="/images/binoculars.png" alt="binoculars">
-                    <h1 class="how-it-works__title">
-                        Keep an eye on your favourite animals online
-                    </h1>
-                </article>
-
-                <article class="how-it-works__dog-paw-print">
-                    <img src="/images/dog-paw-print .png" alt="dog-paw-print">
-                    <h1 class="how-it-works__title">
-                        Become a part of the communtity
-                    </h1>
-                </article>
-
-                <article class="how-it-works__trust">
-                    <img src="/images/trust.png" alt="trust">
-                    <h1 class="how-it-works__title">
-                        Support animals with the donations
-                    </h1>
-                </article>
-            </div>
-        </section>
-        <section class="section__Pets-in-zoo">
-            <div>
-                <article class="Pets-in-zoo__title">
-                    <h1>
+                    <h1 class="pets-in-zoo__title">
                         PETS IN ZOO
                     </h1>
-                </article>
-            </div>
-            <div>
-                <article>
-                    <button class="Choose-your-favorite__buttom">
-                        <i class="Choose-your-favorite__icon"></i>
+
+                    <button class="pets-in-zoo__button">
+                        <i class="pets-in-zoo__icon"></i>
                         CHOOSE YOUR FAVORITE
                     </button>
-                </article>
-            </div>
+                </header>
+
+                <div class="pets-in-zoo__content-one">
+                    <div class="pets-in-zoo__table">
+                        <div class="pets-in-zoo__column">
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Mask Group.png" alt="Pandas">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Pandas</b>
+                                        <br>
+                                        Shenshuping Gengda Panda Center
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Aligator.png" alt="Alligators">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Alligators</b>
+                                        <br>
+                                        St. Augustine's Alligator Farm<br>Zoological Park
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="pets-in-zoo__column">
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Eagle.png" alt="Eagles">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Eagles</b>
+                                        <br>
+                                        Catalina Island
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Elephant.png" alt="Elephants">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Elephants</b>
+                                        <br>
+                                        Tembe Elephant Park
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="pets-in-zoo__column">
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Gorila.png" alt="Gorillas">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Gorillas</b>
+                                        <br>
+                                        GRACE gorillas
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                            <article class="pets-in-zoo__card card">
+                                <img class="card__image" src="/images/Lemur.png" alt="Lemurs">
+                                <div class="card__footer">
+                                    <p class="card__title">
+                                        <b>Lemurs</b>
+                                        <br>
+                                        Madagascar
+                                    </p>
+                                    <img src="/images/icon-tv.svg" alt="icon-tv">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="pets-in-zoo__table">
+                        <div class="pets-in-zoo__column">
+                            <article class="pets-in-zoo__card card-logo">
+                                <img class="card__logo" src="/images/logo-left.svg" alt="logo-left">
+                            </article>
+                            <article class="pets-in-zoo__card-logo card-logo">
+                                <img class="card__logo" src="/images/logo-right.svg" alt="logo-right">
+                            </article>
+                        </div>
+                        <div>
+                            <article class="pets-in-zoo__card-logo card-logo">
+                                <img class="card__logo" src="/images/Penguin.svg" alt="logo-penguin">
+                            </article>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        
+       
+        
+        <div class="wrapper-white">
+            <section class="main__section pay-and-feed">
+                <header class="pay-and-feed__header">
+
+                    <h1 class="pay-and-feed__title">
+                        Pay and feed
+                    </h1>
+
+                    <button class="pay-and-feed__button">
+                        <i class="pay-and-feed__icon"></i>
+                        Donate to volunteers
+                    </button>
+                </header>
+            </section>
+        </div>
         </section>
-
-        <section>
-            <div class="Pets-in-zoo__content-one">
-
-                <div class="Pets-in-zoo">
-                    <article class="article_pandas">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Pandas1.png" alt="Pandas">
-                        <p class="Pets-in-zoo__title">
-                            <b>Pandas</b>
-                            <br>
-                            Shenshuping Gengda Panda Center
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-
-                <div class="Pets-in-zoo">
-                    <article class="article_eagles">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Eagles.png" alt="Eagles">
-                        <p class="Pets-in-zoo__title">
-                            <b>Eagles</b>
-                            <br>
-                            Catalina Island
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-
-                <div class="Pets-in-zoo">
-                    <article class="article_gorillas">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Gorillas.png" alt="Gorillas">
-                        <p class="Pets-in-zoo__title">
-                            <b>Gorillas</b>
-                            <br>
-                            GRACE gorillas
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-            </div>
-
-            <div class="Pets-in-zoo__content-two">
-                <div class="Pets-in-zoo">
-                    <article class="article_aligators">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Aligators.png" alt="Alligators">
-                        <p class="Pets-in-zoo__title">
-                            <b>Alligators</b>
-                            <br>
-                            St. Augustine's Alligator Farm<br>Zoological Park
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-
-                <div class="Pets-in-zoo">
-                    <article class="article_elephants">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Elephants.png" alt="Elephants">
-                        <p class="Pets-in-zoo__title">
-                            <b>Elephants</b>
-                            <br>
-                            Tembe Elephant Park
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-                
-                <div class="Pets-in-zoo">
-                    <article class="article_lemurs">
-                        <img class="Pets-in-zoo__SclipAni" src="/images/Lemurs.png" alt="Lemurs">
-                        <p class="Pets-in-zoo__title">
-                            <b>Lemurs</b>
-                            <br>
-                            Madagascar
-                        </p>
-                        <img src="/images/icon-tv.svg" alt="icon-tv">
-                    </article>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
+    <div class="wrapper-greenblue">
+        <footer class="footer">
+            <h1 class="footer__title">Online ZOO</h1>
+            <img class="footer__logo" src="./images/Logo-large.svg" alt="logo">
+            <nav class="footer__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item navigation__item_active">
+                        <a class="navigation__link" href="#">ABOUT</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">MAP</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">ZOOS</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">CONTACT US</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">DESIGN</a>
+                    </li>
+                </ul>
 
-    <footer class="footer">
-        <h1 class="footer__title">Online ZOO</h1>
-        <img class="footer__logo" src="./images/Logo-large.svg" alt="logo">
-        <nav class="footer__navigation navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item navigation__item_active">
-                    <a class="navigation__link" href="#">ABOUT</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">MAP</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">ZOOS</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">CONTACT US</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">DESIGN</a>
-                </li>
-            </ul>
+            </nav>
+            <aside class="footer__about-site">
+                <p class="text__design-by">DESIGN BY LEMESHKO KATERYNA</p>
+                <br>
+                <p class="text__about-school">@RSSCHOOL AND @YEM DIGITAL 2021</p>
 
-        </nav>
-        <aside class="footer__about-site">
-            <p class="text__design-by">DESIGN BY LEMESHKO KATERYNA</p>
-            <br>
-            <p class="text__about-school">@RSSCHOOL AND @YEM DIGITAL 2021</p>
+            </aside>
+        </footer>
+    </div>
 
-        </aside>
-    </footer>
 
 </body>
 

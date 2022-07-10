@@ -2,11 +2,35 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .header {
     display: flex;
-    background: #2A8086;
+
     align-items: center;
     padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1620px
+}
+
+.header__logo {
+    width: 108px;
+    height: 83.61px;
+    margin-right: 53px;
+
+}
+
+.wrapper-greenblue {
+    background: #2A8086;
+}
+
+.wrapper-white {
+    background: #E5E5E5;
+    ;
 }
 
 .header__title {
@@ -21,28 +45,77 @@
 .navigation__link {
     text-decoration: none;
     color: #C5E1E5;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 52px;
 }
 
 .navigation__list {
     display: flex;
+    margin-top: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #c5e1e6;
+}
+
+.header__search {
+    width: 32px;
+    height: 32px;
+    margin-top: 26px;
 }
 
 .header__buttons {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+
 }
 
 .header__button {
-    border-radius: 20px;
-    border-color: #ffff;
+
+    border: 1px solid #C5E1E6;
+    border-radius: 100px;
+    width: 97px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 21px;
+    background: #2A8086;
+    text-transform: uppercase;
+    color: #C5E1E6;
+    margin-top: 16px;
+}
+
+.animals-online__button {
+    width: 258px;
+    height: 52px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.6);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0D444D;
 }
 
 .footer {
     display: flex;
-    background: #2A8086;
+    max-width: 1620px;
+    width: 100%;
+    margin: 0 auto;
     align-items: center;
     padding: 20px;
+}
+
+.footer__logo {
+    width: 108px;
+    height: 83.61px;
+    margin-right: 53px;
 }
 
 .footer__title {
@@ -60,12 +133,10 @@
 
 .text__design-by {
     margin: 0;
-
 }
 
 .text__about-school {
     margin: 0;
-
 }
 
 /* 
@@ -88,10 +159,24 @@
 } */
 .main__section {
     display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1620px
 }
 
+/* .main__section animals-online {
+    width: 1920px;
+    height: 795px;
+} */
 .animals-online {
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+.animals-online__title {
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 85px;
+    color: #F3F7F8;
 }
 
 .animals-online__photo {
@@ -99,90 +184,144 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    padding: 50px;
-
+    padding: 10px;
 }
 
-.animals-online__SclipAni {
-    -webkit-clip-path: ellipse(310px 258px at 50% 50%);
-
+.animals-online__content {
+    /* width: 480px;
+    height: 40px; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F3F7F8;
 }
 
 .how-it-works {
-
-    padding: 10px 10px 10px 80px;
+    padding: 10px;
     font-size: 10px;
+    flex-direction: column;
 }
 
 .how-it-works__title {
-    padding: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
 }
 
 .how-it-works__content {
     display: flex;
     align-items: center;
     padding: 20px 100px 20px 100px;
-
     justify-content: space-between;
     font-size: 5px;
     text-align: center;
 }
 
-.section__Pets-in-zoo {
-    padding: 10px 10px 10px 80px;
+.content__image {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 72.5px;
+}
+
+
+.content__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #0D444D;
+    margin-top: 14px;
+}
+
+.pets-in-zoo__header {
+    padding: 10px;
     font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.Pets-in-zoo__title {
+.pets-in-zoo__title {
     padding: 30px;
-   
 }
 
-.Choose-your-favorite__icon {
+.pets-in-zoo__icon {
     background-image: url("/images/icon-heart.svg");
-    padding-left: 32px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    width: 24px;
+    height: 24px;
     background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
 }
 
-.Choose-your-favorite__buttom {
+.pets-in-zoo__button {
     border-radius: 20px;
     border-color: #ffff;
+    border: none;
     height: 50px;
     width: 250px;
-}
-
-.Pets-in-zoo {
-    background: #FFFFFF;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
-    border-radius: 10px;
-    
-}
-
-.Pets-in-zoo__SclipAni {
-    -webkit-clip-path: ellipse(110px 110px at 50% 50%);
-}
-
-.Pets-in-zoo__content-one {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.Pets-in-zoo__title {
+
+.main__illustration {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+.pets-in-zoo {
+    flex-direction: column;
+}
+
+.pets-in-zoo__content-one {
+    display: flex;
+}
+
+
+.card__title {
     font-size: 16px;
     text-align: left;
     padding-left: 5px;
 }
 
-.Pets-in-zoo__content-two {
+.pets-in-zoo__table {
+    gap: 20px;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
+}
+
+.pets-in-zoo__column {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.card__footer {
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+    width: 480px;
+}
+
+.pets-in-zoo__card-logo {
+    margin-left: 20px;
+}
+
+.card-logo {
+    vertical-align: middle;
 }
