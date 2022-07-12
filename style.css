@@ -403,14 +403,14 @@ align-self: center
     padding: 14px 78px;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0.1em;
+    letter-spacing: -0.05em;
     text-transform: uppercase;
     color: #0D444D;
     order: 0;
     border: none;
     align-items: center;
     background: #C5E1E6;
-    filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+    drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
 }
 
 .pay-and-feed__content {
@@ -495,5 +495,48 @@ align-self: center
 
 .card__answer {
     background: #FFFFFF;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+}
+.pay-and-feed {
+    padding: 10px;
+    font-size: 10px;
+    flex-direction: column;
+}
+.pay-and-feed__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+}
+/* .pay-and-feed__button {
+width: 356px;
+} */
+.pay-and-feed__content {
+    display: flex;
+    align-items: center;
+    padding: 20px 100px 20px 100px;
+    justify-content: space-between;
+    font-size: 5px;
+    text-align: center;
+}
+.info-card__texts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C5E1E6;
+    margin-top: 14px;
+}
+.info-card__vector {
+    margin: 0 20px 40px;
+    padding: 20px;
+}
+.feedback {
+    border: 0;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
 }
