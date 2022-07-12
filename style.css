@@ -218,15 +218,31 @@ html {
     font-size: 5px;
     text-align: center;
 }
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-card__image {
 
-.content__image {
-    background: #FFFFFF;
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
-    border-radius: 100px;
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.info-card__image img {
+    width: 50px;
+    height: 50px;
 
-.content__title {
+}
+
+.info-card__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -241,36 +257,50 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 66px;
 }
 
-.pets-in-zoo__title {
-    padding: 30px;
-}
 
 .pets-in-zoo__icon {
     background-image: url("/images/icon-heart.svg");
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 5px;
+    margin-right: 19px;
 }
 
 .pets-in-zoo__button {
     border-radius: 100px;
-    padding: 14px 78px;
+  
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.1em;
     color: #0D444D;
     border: none;
     height: 52px;
+   padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
 }
 
+.pets-in-zoo__arrow {
+border: none;
+background-color: inherit;
+align-self: center
+
+;
+}
+.pets-in-zoo__column-controls {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    
+}
 
 .main__illustration {
     width: 100%;
@@ -294,7 +324,6 @@ html {
     display: flex;
 }
 
-
 .card__title {
     font-size: 16px;
     text-align: left;
@@ -304,12 +333,15 @@ html {
 .pets-in-zoo__table {
     gap: 20px;
     display: flex;
+    width: 100%;
 }
 
 .pets-in-zoo__column {
     display: flex;
     gap: 20px;
     flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 
 .card {
@@ -329,11 +361,17 @@ html {
     padding: 20px 20px 0 20px;
     width: 480px;
 }
-
+.pets-in-zoo {
+    padding: 80px 0 100px 0;
+}
 .pets-in-zoo__card-logo {
     margin-left: 20px;
 }
 
+.pets-in-zoo__image {
+    width: 22.59px;
+    height: 49.46px;
+}
 .card-logo {
     vertical-align: middle;
 }
@@ -365,7 +403,7 @@ html {
     padding: 14px 78px;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #0D444D;
     order: 0;
@@ -382,3 +420,80 @@ html {
     justify-content: space-between;
     font-size: 5px;
     text-align: center;
+}
+
+.testimonials {
+    flex-direction: column;
+}
+
+.testimonials__header {
+    border: 0;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+}
+
+.testimonials__button {
+    padding: 14px 78px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #0D444D;
+    border: none;
+    height: 52px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+
+}
+
+.testimonials__icon {
+    background-image: url("/images/icon-feedback.svg");
+    width: 6px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1px;
+}
+
+.feedback__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.feedback__content_answer {
+    border: 0;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.feedback__content_image {
+    border: 0;
+    flex-grow: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__answer {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+}
