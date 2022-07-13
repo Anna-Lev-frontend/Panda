@@ -264,7 +264,7 @@ html {
 }
 
 
-.pets-in-zoo__icon {
+.pets-in-zoo__icon, .testimonials__icon {
     background-image: url("/images/icon-heart.svg");
     width: 25px;
     height: 25px;
@@ -273,7 +273,7 @@ html {
     margin-right: 19px;
 }
 
-.pets-in-zoo__button {
+.pets-in-zoo__button, .testimonials__button {
     border-radius: 100px;
 
     font-size: 18px;
@@ -286,8 +286,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 66px;
+   
     filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
+  
 }
 
 .pets-in-zoo__arrow {
@@ -391,6 +392,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 90px;
 }
 
 .pay-and-feed__title {
@@ -448,21 +450,7 @@ html {
     color: #0D444D;
 }
 
-.testimonials__button {
-    padding: 14px 78px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.1em;
-    color: #0D444D;
-    border: none;
 
-    height: 52px;
-    text-transform: uppercase;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
-    border-radius: 100px;
-
-}
 
 .testimonials__icon {
     background-image: url("/images/icon-feedback.svg");
@@ -504,7 +492,7 @@ html {
 }
 
 .pay-and-feed {
-    padding: 10px;
+    padding: 80px 10px;
     font-size: 10px;
     flex-direction: column;
 }
@@ -512,15 +500,13 @@ html {
 .pay-and-feed__title {
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
+    
     text-transform: uppercase;
     color: #0D444D;
-    margin-bottom: 91px;
+   
 }
 
-.pay-and-feed__button {
-    margin-bottom: 91px;
-}
+
 
 .pay-and-feed__content {
     display: flex;
@@ -529,8 +515,12 @@ html {
     justify-content: space-between;
     font-size: 5px;
     text-align: center;
+    align-items: center;
 }
-
+.lines {
+    max-width: 260px;
+    width: 100%;
+}
 .info-card__texts {
     font-weight: 400;
     font-size: 14px;
@@ -541,8 +531,7 @@ html {
 }
 
 .info-card__vector {
-    margin: 0 20px 40px;
-    padding: 20px;
+   display: flex;
 }
 
 .feedback {
@@ -552,6 +541,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+
 }
 
 .feedback__person {
@@ -613,5 +604,10 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+  
+
+}
+.Look-at-this-beautiful__arrow {
+background: none;
+border: none;
 }
