@@ -197,7 +197,7 @@ html {
 }
 
 .how-it-works {
-    padding: 10px;
+    padding: 80px 10px;
     font-size: 10px;
     flex-direction: column;
 }
@@ -260,7 +260,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 66px;
+    margin-bottom: 90px;
 }
 
 
@@ -336,6 +336,7 @@ html {
     gap: 20px;
     display: flex;
     width: 100%;
+    
 }
 
 .pets-in-zoo__column {
@@ -365,7 +366,7 @@ html {
 }
 
 .pets-in-zoo {
-    padding: 80px 0 100px 0;
+    padding: 80px 10px;
 }
 
 .pets-in-zoo__card-logo {
@@ -430,6 +431,7 @@ html {
 
 .testimonials {
     flex-direction: column;
+    padding: 80px 10px;
 }
 
 .testimonials__header {
@@ -439,6 +441,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 52px;
 }
 
 .testimonials__title {
@@ -542,6 +545,7 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 100px;
 
 }
 
@@ -570,7 +574,7 @@ html {
 }
 
 .Look-at-this-beautiful-animals {
-    padding: 10px;
+    padding: 80px 10px;
     font-size: 10px;
     flex-direction: column;
 }
@@ -581,7 +585,7 @@ html {
     line-height: 28px;
     text-transform: uppercase;
     color: #0D444D;
-    margin-bottom: 91px;
+    margin-bottom: 60px;
 }
 
 .Look-at-this-beautiful__content {
