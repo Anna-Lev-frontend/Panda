@@ -26,11 +26,50 @@ html {
 
 .wrapper-greenblue {
     background: #2A8086;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.wrapper-greenblue__background {
+    background: #E5E5E5;
+    z-index: 2;
+}
+
+.wrapper-greenblue__background::after {
+
+    content: "";
+    background-image: url(/images/background-animals.svg);
+    width: 100%;
+    height: 930px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position-y: -180px;
+    background-size: cover;
+}
+
+.wrapper-greenblue__pay-and-feed::after {
+    content: "";
+    background-image: url(/images/background-pay-feed.svg);
+    width: 100%;
+    height: 530px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    background-size: cover;
 }
 
 .wrapper-white {
     background: #E5E5E5;
-    ;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .header__title {
@@ -157,6 +196,11 @@ html {
     background-repeat: no-repeat;
     top: 40px;
 } */
+.animals-online {
+    padding: 40px 10px;
+    justify-content: space-between;
+}
+
 .main__section {
     display: flex;
     width: 100%;
@@ -168,7 +212,7 @@ html {
     width: 1920px;
     height: 795px;
 } */
-.animals-online {
+.animals-online__content {
     padding: 10px 10px 10px 10px;
 }
 
@@ -180,24 +224,23 @@ html {
 }
 
 .animals-online__photo {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    padding: 10px;
+
+    max-width: 800px;
+    width: 100%;
 }
 
-.animals-online__content {
-    /* width: 480px;
-    height: 40px; */
+.animals-online__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #F3F7F8;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 87px;
 }
 
 .how-it-works {
-    padding: 80px 10px;
+    padding: 0 10px 40px;
     font-size: 10px;
     flex-direction: column;
 }
@@ -264,7 +307,8 @@ html {
 }
 
 
-.pets-in-zoo__icon, .testimonials__icon {
+.pets-in-zoo__icon,
+.testimonials__icon {
     background-image: url("/images/icon-heart.svg");
     width: 25px;
     height: 25px;
@@ -273,7 +317,8 @@ html {
     margin-right: 19px;
 }
 
-.pets-in-zoo__button, .testimonials__button {
+.pets-in-zoo__button,
+.testimonials__button {
     border-radius: 100px;
 
     font-size: 18px;
@@ -286,9 +331,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
     filter: drop-shadow(0px 2px 20px rgba(185, 213, 217, 0.6));
-  
+
 }
 
 .pets-in-zoo__arrow {
@@ -308,8 +353,7 @@ html {
 
 .main__illustration {
     width: 100%;
-    max-width: 1620px;
-    margin: 0 auto;
+
 }
 
 .pets-in-zoo {
@@ -336,7 +380,7 @@ html {
     gap: 20px;
     display: flex;
     width: 100%;
-    
+
 }
 
 .pets-in-zoo__column {
@@ -503,10 +547,10 @@ html {
 .pay-and-feed__title {
     font-weight: 400;
     font-size: 24px;
-    
+
     text-transform: uppercase;
     color: #0D444D;
-   
+
 }
 
 
@@ -520,10 +564,12 @@ html {
     text-align: center;
     align-items: center;
 }
+
 .lines {
     max-width: 260px;
     width: 100%;
 }
+
 .info-card__texts {
     font-weight: 400;
     font-size: 14px;
@@ -534,19 +580,17 @@ html {
 }
 
 .info-card__vector {
-   display: flex;
+    display: flex;
 }
 
 .feedback {
     border: 0;
     flex-grow: 0;
-    padding: 10px;
+    padding: 20px 100px 20px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 100px;
-
 }
 
 .feedback__person {
@@ -579,19 +623,25 @@ html {
     flex-direction: column;
 }
 
+.Look-at-this-beautiful-animals__header {
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
 .Look-at-this-beautiful-animals__title {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #0D444D;
-    margin-bottom: 60px;
+
 }
 
 .Look-at-this-beautiful__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 100px 20px 100px;
 }
 
 .Look-at-this-beautiful__text {
@@ -608,10 +658,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-
 }
+
 .Look-at-this-beautiful__arrow {
-background: none;
-border: none;
+    background: none;
+    border: none;
 }
