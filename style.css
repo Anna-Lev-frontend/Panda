@@ -657,11 +657,13 @@ html {
     background: none;
     border: none;
 }
+
 .choose-your-favorite-animal {
     padding: 0 10px 40px;
     font-size: 10px;
     flex-direction: column;
 }
+
 .Choose-your-favorite-Animal__title {
     font-weight: 400;
     font-size: 24px;
@@ -669,12 +671,53 @@ html {
     text-transform: uppercase;
     color: #0D444D;
     margin-bottom: 98px;
-   }
+}
 
 .info-card__map {
-    text-align:center ;
+    text-align: center;
 }
+
 .info-card-map__content {
     width: 100%;
     max-width: 90px;
+}
+
+.giant-pandas__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-bottom: 71px;
+}
+
+
+
+.giant-pandas__navigation_list {
+    list-style-type: none
+}
+
+.giant-pandas__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.giant-pandas__arrow {
+    width: 42px;
+    border-color: #FFFFFF;
+}
+.giant-pandas__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #0D444D;
+}
+
+.video-panda {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 19.5469px;
+
 }
