@@ -35,8 +35,14 @@ html {
     z-index: 2;
 }
 
-.wrapper-greenblue__background::after {
+.wrapper-greenblue__footer {
+    background: #196469;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
 
+.wrapper-greenblue__background::after {
     content: "";
     background-image: url(/images/background-animals.svg);
     width: 100%;
@@ -668,7 +674,7 @@ html {
 .info-card__map {
     text-align:center ;
 }
-.info-card-map__animols {
+.info-card-map__content {
     width: 100%;
     max-width: 90px;
 }
