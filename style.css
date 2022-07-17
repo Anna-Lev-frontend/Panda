@@ -51,7 +51,7 @@ html {
     top: 0;
     background-repeat: no-repeat;
     z-index: -1;
-    background-position-y: -180px;
+    background-position-y: -232px;
     background-size: cover;
 }
 
@@ -344,6 +344,8 @@ html {
 
 .main__illustration {
     width: 100%;
+
+
 }
 
 .pets-in-zoo {
@@ -749,24 +751,30 @@ html {
     padding: 20px 100px 20px 100px;
 }
 
-.information__title {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #0D444D;
-    width: 100%;
-    max-width: 156px;
+.information {
+    flex-direction: column;
+    padding: 80px 10px;
 }
 
+.information__title-facts {
+    margin-right: 642px
+}
+
+
 .information__header {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #0D444D;
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    
+}
+
+.information__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .information__text {
@@ -783,4 +791,9 @@ html {
     line-height: 20px;
     text-decoration-line: underline;
     color: #0D444D;
+}
+
+.donate__illustration {
+    width: 100%;
+   
 }
