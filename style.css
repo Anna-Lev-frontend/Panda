@@ -677,11 +677,26 @@ html {
 
 .info-card__map {
     text-align: center;
+    position: relative;
 }
+.info-card-map__aligator,
+ .info-card-map__elephant,
+ .info-card-map__gorila,
+ .info-card-map__eagle {
+    position: absolute;
+ }
+ 
+ .info-card-map__eagle {
+    left: 17%;
+    bottom: 44%;
+ }
 
+.animals-online
+}
 .info-card-map__content {
     width: 100%;
     max-width: 90px;
+
 }
 
 .giant-pandas__title {
@@ -795,5 +810,6 @@ html {
 
 .donate__illustration {
     width: 100%;
-   
+   position: relative;
+   bottom: -100px;
 }
