@@ -653,6 +653,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 51px;
 }
 
 .Look-at-this-beautiful__arrow {
@@ -679,51 +680,65 @@ html {
     text-align: center;
     position: relative;
 }
+
 .info-card-map__aligator,
- .info-card-map__elephant,
- .info-card-map__gorila,
- .info-card-map__eagle {
+.info-card-map__elephant,
+.info-card-map__gorila,
+.info-card-map__eagle {
     position: absolute;
- }
- 
- .info-card-map__eagle {
+}
+
+.info-card-map__eagle {
     left: 17%;
     bottom: 44%;
- }
-
-.animals-online
 }
+
+
 .info-card-map__content {
     width: 100%;
     max-width: 90px;
+}
 
+.giant-pandas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .giant-pandas__title {
-    font-weight: 400;
+    font-weight: normal;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #0D444D;
     margin-bottom: 71px;
+    margin-top: 50px;
 }
 
-
+.giant-pandas__button {
+    margin-top: 54px;
+    margin-right:15px;
+}
 
 .giant-pandas__navigation_list {
-    list-style-type: none
+    list-style-type: none;
+    margin: 37px 50px 40px 0px;
+
+
 }
 
 .giant-pandas__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .giant-pandas__arrow {
-    width: 42px;
-    border-color: #FFFFFF;
+    max-width: 42px;
+    width: 100%;
+    border: none;
+    background-color: #E5E5E5;
+    margin-left: 34px;
 }
 
 .giant-pandas__text {
@@ -732,6 +747,8 @@ html {
     line-height: 21px;
     text-transform: capitalize;
     color: #0D444D;
+    margin-top: 29px;
+    margin-bottom: 8px;
 }
 
 .video-panda {
@@ -739,12 +756,7 @@ html {
     border-radius: 19.5469px;
 }
 
-.side-cameras {
-    padding: 80px 10px;
-    font-size: 10px;
-    flex-direction: column;
 
-}
 
 .side-cameras__header {
     margin-bottom: 60px;
@@ -757,13 +769,17 @@ html {
     line-height: 21px;
     text-transform: capitalize;
     color: #0D444D;
+    margin-top: 56px;
+    margin-bottom: 8px;
 }
-
+.side-cameras__info-card {
+ 
+}
 .side-cameras__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px 20px 100px;
+    padding: 20px 40px 20px 0px;
 }
 
 .information {
@@ -777,12 +793,10 @@ html {
 
 
 .information__header {
-    ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
-    
 }
 
 .information__content {
@@ -810,6 +824,6 @@ html {
 
 .donate__illustration {
     width: 100%;
-   position: relative;
-   bottom: -100px;
+    position: relative;
+    bottom: -100px;
 }
