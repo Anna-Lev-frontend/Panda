@@ -689,8 +689,8 @@ html {
 }
 
 .info-card-map__eagle {
-    left: 14%;
-    bottom: 45%;
+    left: 16%;
+    bottom: 50%;
 }
 
 .info-card-map__aligator {
@@ -699,13 +699,13 @@ html {
 }
 
 .info-card-map__gorila {
-    left: 46%;
+    left: 48%;
     bottom: 33%;
 }
 
 .info-card-map__panda {
-    left: 15%;
-    bottom: 50%;
+    left: 68%;
+    bottom: 45%;
 }
 
 .info-card-map__content {
