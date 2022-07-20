@@ -689,11 +689,23 @@ html {
 }
 
 .info-card-map__eagle {
-    left: 17%;
-    bottom: 44%;
+    left: 14%;
+    bottom: 45%;
 }
 
+.info-card-map__aligator {
+    left: 25%;
+    bottom: 45%;
+} 
 
+.info-card-map__gorila {
+    left: 46%;
+    bottom: 33%;
+} 
+.info-card-map__panda {
+    left: 15%;
+    bottom: 50%;
+}
 .info-card-map__content {
     width: 100%;
     max-width: 90px;
@@ -717,14 +729,12 @@ html {
 
 .giant-pandas__button {
     margin-top: 54px;
-    margin-right:15px;
+    margin-right: 15px;
 }
 
 .giant-pandas__navigation_list {
     list-style-type: none;
     margin: 37px 50px 40px 0px;
-
-
 }
 
 .giant-pandas__content {
@@ -772,9 +782,7 @@ html {
     margin-top: 56px;
     margin-bottom: 8px;
 }
-.side-cameras__info-card {
- 
-}
+
 .side-cameras__content {
     display: flex;
     justify-content: space-between;
@@ -782,21 +790,44 @@ html {
     padding: 20px 40px 20px 0px;
 }
 
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .information {
     flex-direction: column;
     padding: 80px 10px;
 }
 
-.information__title-facts {
-    margin-right: 642px
+.information__title-information {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+   
 }
 
+.information__text-information {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+}
 
 .information__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0D444D;
 }
 
 .information__content {
@@ -826,4 +857,31 @@ html {
     width: 100%;
     position: relative;
     bottom: -100px;
+}
+
+.main__columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+.information__title-facts {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #0D444D;
+    margin-right: 642px
+}
+
+.navigation__fact-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0D444D;
+}
+
+.navigation__fact-list {
+    list-style-type: none;
 }
