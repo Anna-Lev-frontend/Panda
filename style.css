@@ -85,6 +85,10 @@ html {
     margin-right: 20px;
 }
 
+.navigation__item_active {
+    text-decoration: underline
+}
+
 .navigation__link {
     text-decoration: none;
     color: #C5E1E5;
@@ -350,8 +354,6 @@ html {
 
 .main__illustration {
     width: 100%;
-
-
 }
 
 .pets-in-zoo {
@@ -672,6 +674,7 @@ html {
     padding: 0 10px 40px;
     font-size: 10px;
     flex-direction: column;
+    position: relative;
 }
 
 .Choose-your-favorite-Animal__title {
@@ -693,6 +696,22 @@ html {
 .info-card-map__gorila,
 .info-card-map__eagle {
     position: absolute;
+}
+
+.info-card-map__aligator:hover::after,
+.info-card-map__panda:hover::after,
+.info-card-map__gorila:hover::after,
+.info-card-map__eagle:hover::after {
+    content: "";
+    background-image: url(./images/box-white.svg);
+    width: 113px;
+    height: 96px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    top: -8px;
+    left: -13px;
 }
 
 .info-card-map__eagle {
@@ -945,11 +964,12 @@ html {
     position: relative;
     background-image: url(./images/mini-gorila.png);
 }
+
 .main__video-link-aligator {
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
     width: 76px;
     height: 73px;
     position: relative;
-    background-image: url(./images/mini-aligator.png); 
+    background-image: url(./images/mini-aligator.png);
 }
