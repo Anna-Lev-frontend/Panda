@@ -104,6 +104,11 @@ html {
     color: #c5e1e6;
 }
 
+.navigation__link:hover {
+    color: #C5E1E6;
+    text-decoration: underline;
+}
+
 .header__search {
     width: 32px;
     height: 32px;
@@ -159,6 +164,7 @@ html {
     text-transform: uppercase;
     text-align: center;
     color: #0D444D;
+    cursor: pointer;
 }
 
 .footer {
@@ -314,7 +320,7 @@ html {
 .pets-in-zoo__button,
 .testimonials__button {
     border-radius: 100px;
-
+    cursor: pointer;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.1em;
@@ -456,6 +462,7 @@ html {
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 356px;
+    cursor: pointer;
 }
 
 .pay-and-feed__content {
