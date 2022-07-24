@@ -151,6 +151,10 @@ html {
     cursor: pointer;
 }
 
+.header__burger-menu {
+    display: none;
+}
+
 .animals-online__button {
     width: 258px;
     height: 52px;
@@ -693,7 +697,9 @@ html {
     background: none;
     border: none;
 }
-
+.Choose-your-favorite-Animal__info-card-map {
+    overflow: auto;
+}
 .choose-your-favorite-animal {
     padding: 0 10px 40px;
     font-size: 10px;
@@ -713,7 +719,10 @@ html {
 .info-card__map {
     text-align: center;
     position: relative;
+    width: 1600px;
+    height: 915px;
 }
+
 
 .info-card-map__aligator,
 .info-card-map__panda,
@@ -1063,7 +1072,7 @@ html {
     left: 0;
     border-radius: 20px;
     padding: 32px 60px 46px 60px;
-    
+
 }
 
 .popup__header {
@@ -1095,11 +1104,13 @@ html {
     text-transform: uppercase;
     padding-right: 109px;
 }
+
 .popup__line {
     display: flex;
     align-items: center;
-   background-color: #C5E1E5;
+    background-color: #C5E1E5;
 }
+
 .popup__line1 {
     border: 1px solid;
     width: 224px;
@@ -1107,6 +1118,7 @@ html {
     padding-top: 20px;
     background: #2A8086;
 }
+
 .popup__line2 {
     border: 1px solid;
     width: 224px;
@@ -1114,6 +1126,7 @@ html {
     padding-top: 20px;
     background: #FFFFFF;
 }
+
 .popup__butten {
     display: flex;
     align-items: center;
@@ -1230,6 +1243,12 @@ html {
         height: 46px;
     }
 
+    .animals-online__title {
+        margin-top: 0;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
     .pets-in-zoo__title,
     .pay-and-feed__title,
     .testimonials__title {
@@ -1284,9 +1303,12 @@ html {
 @media (max-width: 992px) {
     .animals-online__title {
         margin-top: 0;
-        font-size: 45px;
+        font-size: 35px;
+        line-height: 40px;
     }
-
+.pets-in-zoo__column:nth-child(3) {
+display: none;
+}
     .giant-pandas__title {
         font-size: 20px;
     }
@@ -1313,24 +1335,22 @@ html {
 }
 
 @media (max-width: 768px) {
-    .animals-online__title {
-        margin-top: 0;
-        font-size: 30px;
-        font-weight: 100;
-        margin-bottom: 0;
-        line-height: 65px;
+    .animals-online__title br {
+        display: none;
     }
 
     .animals-online {
         padding: 10px 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .animals-online__text {
-        margin-bottom: 5px;
+    .animals-online__photo {
+        display: none;
     }
 
     .animals-online__content {
-        padding: 5px 5px 5px 40px;
+        padding: 5px 5px 45px 5px;
     }
 
     .pets-in-zoo__title,
@@ -1406,6 +1426,58 @@ html {
     .how-it-works__content {
         padding: 5px 20px 5px 20px;
     }
+
+    .wrapper-greenblue__background::after {
+        height: 341px;
+    }
+
+    .header__burger-menu {
+        display: block;
+
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: none;
+
+    }
+
+    .header__buttons {
+        display: none;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 640px) {
+    .how-it-works__content {
+        flex-direction: column;
+    }
+
+    .info-card {
+        margin-bottom: 20px;
+    }
+
+    .how-it-works__title {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .wrapper-greenblue__background::after {
+        height: 386px;
+    }
+
+}
+
+
+
+@media (max-width: 330px) {
+    .wrapper-greenblue__background::after {
+        height: 450px;
+    }
+}
