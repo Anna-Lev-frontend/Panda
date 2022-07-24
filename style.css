@@ -63,7 +63,6 @@ html {
     top: 0;
     background-repeat: no-repeat;
     z-index: -1;
-
     background-size: cover;
 }
 
@@ -71,8 +70,6 @@ html {
     background: #C5E1E6;
     width: 100%;
     position: relative;
-
-
 }
 
 .header__title {
@@ -1056,6 +1053,157 @@ html {
     color: #F3F7F8;
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    max-width: 568px;
+    height: 100%;
+    max-height: 774px;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    padding: 32px 60px 46px 60px;
+    
+}
+
+.popup__header {
+    background-color: #2A8086;
+}
+
+.popup__header-logo {
+    width: 108px;
+    height: 83.61px;
+    display: flex;
+    align-items: center;
+}
+
+.popup__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5E1E5;
+    padding: 32px 149px 20px 90px;
+}
+
+.popup__text {
+    min-height: 100%;
+    padding: 0px 0px 0px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-right: 109px;
+}
+.popup__line {
+    display: flex;
+    align-items: center;
+   background-color: #C5E1E5;
+}
+.popup__line1 {
+    border: 1px solid;
+    width: 224px;
+    height: 1px;
+    padding-top: 20px;
+    background: #2A8086;
+}
+.popup__line2 {
+    border: 1px solid;
+    width: 224px;
+    height: 2px;
+    padding-top: 20px;
+    background: #FFFFFF;
+}
+.popup__butten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C5E1E5;
+}
+
+.butten__google,
+.butten__facebook {
+    width: 216px;
+    height: 54px;
+    left: 61px;
+    top: 232px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+    border-color: #C5E1E5;
+}
+
+.google__icon,
+.facebook__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.popup__form {
+    background-color: #C5E1E5;
+}
+
+.popup__form_label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #0D444D;
+}
+
+.popup__form_textarea {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    width: 448px;
+    height: 54px;
+}
+
+.popup__agree-form {
+    background-color: #C5E1E5;
+}
+
+
+.popup__send {
+    background-color: #C5E1E5;
+}
+
+.popup__agree-form_coment {
+    border: 1.5px solid #19707D;
+    border-radius: 4px;
+    width: 22px;
+    height: 22px;
+}
+
+.popup__agree-form_inline {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D2D2D;
+}
+
+.butten__send {
+    width: 448px;
+    height: 54px;
+    background: #2A8088;
+    box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C5E1E6;
+
+}
+
 @media (max-width: 1400px) {
     .animals-online__title {
         margin-top: 0;
@@ -1092,8 +1240,8 @@ html {
     .animals-online__text {
         margin-bottom: 25px;
     }
-   
-    .Look-at-this-beautiful__column { 
+
+    .Look-at-this-beautiful__column {
         margin-left: 21px;
     }
 
@@ -1124,9 +1272,10 @@ html {
         size: 12px;
     }
 
-    .header__button_log-in {      
+    .header__button_log-in {
         margin: 0;
     }
+
     .donate__illustration {
         bottom: -60px
     }
@@ -1136,21 +1285,28 @@ html {
     .animals-online__title {
         margin-top: 0;
         font-size: 45px;
-    }.giant-pandas__title {
+    }
+
+    .giant-pandas__title {
         font-size: 20px;
     }
+
     .main__header {
         padding-top: 30px;
     }
+
     .giant-pandas__title {
         font-size: 16px;
     }
+
     .donate__illustration {
         bottom: -45px
     }
+
     .main__content {
         padding-right: 5px;
     }
+
     .giant-pandas__arrow {
         margin-left: 10px;
     }
@@ -1244,7 +1400,6 @@ html {
         font-weight: 400;
         font-size: 10px;
         line-height: 10px;
-
         margin-top: 10px;
     }
 
