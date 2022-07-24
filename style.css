@@ -319,7 +319,7 @@ html {
     padding: 10px;
     font-size: 10px;
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
     margin-bottom: 90px;
 }
@@ -697,9 +697,11 @@ html {
     background: none;
     border: none;
 }
+
 .Choose-your-favorite-Animal__info-card-map {
     overflow: auto;
 }
+
 .choose-your-favorite-animal {
     padding: 0 10px 40px;
     font-size: 10px;
@@ -944,8 +946,8 @@ html {
     border-radius: 19.5469px;
     max-width: 1324px;
     max-height: 604px;
-    width: 69vw;
-    height: 32vw;
+    width: 83vw;
+    height: 39vw;
 
 }
 
@@ -1217,6 +1219,13 @@ html {
 
 }
 
+@media (max-width: 1550px) {
+    .pets-in-zoo__column:nth-child(3) {
+        display: none;
+    }
+}
+
+
 @media (max-width: 1400px) {
     .animals-online__title {
         margin-top: 0;
@@ -1231,6 +1240,10 @@ html {
 
         font-size: 24px;
 
+    }
+
+    .pets-in-zoo__column:nth-child(3) {
+        display: none;
     }
 }
 
@@ -1298,6 +1311,13 @@ html {
     .donate__illustration {
         bottom: -60px
     }
+
+    .pets-in-zoo__column:nth-child(2) {
+        display: none;
+    }
+    .side-cameras__info-card:nth-child(3) {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1306,9 +1326,7 @@ html {
         font-size: 35px;
         line-height: 40px;
     }
-.pets-in-zoo__column:nth-child(3) {
-display: none;
-}
+
     .giant-pandas__title {
         font-size: 20px;
     }
@@ -1331,6 +1349,16 @@ display: none;
 
     .giant-pandas__arrow {
         margin-left: 10px;
+    }
+    .side-cameras__info-card:nth-child(2) {
+        display: none;
+        align-items: center;
+    }
+    .side-cameras__content {
+        padding: 20px 230px;
+    }
+    .main__column {
+        flex-direction: column;
     }
 }
 
@@ -1408,9 +1436,7 @@ display: none;
     }
 
 
-    .lines {
-        max-width: 50px;
-    }
+    
 
     .footer__about-site {
         size: 10px;
@@ -1448,6 +1474,12 @@ display: none;
     .header__buttons {
         display: none;
     }
+    .Look-at-this-beautiful__info-card:nth-child(7) {
+        display: none;
+    }
+    .Look-at-this-beautiful__content {
+        padding: 5px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1463,15 +1495,41 @@ display: none;
         margin-bottom: 20px;
     }
 
+    .pay-and-feed__content {
+        flex-direction: column;
+    }
 
-}
+    .feedback {
+        padding: 20px;
+    }
+    .testimonials__feedback {
+        flex-direction: column;
+    }
+    }
+    .Look-at-this-beautiful__info-card:nth-child(6) {
+        display: none;
+    }
+   
+
 
 
 @media (max-width: 480px) {
     .wrapper-greenblue__background::after {
         height: 386px;
     }
-
+    .Look-at-this-beautiful__info-card:nth-child(5) {
+        display: none;
+    }
+    .Look-at-this-beautiful__info-card:nth-child(4) {
+        display: none;
+    }
+    .testimonials__header {
+        flex-direction: column;
+    }
+    .pay-and-feed__header {
+     flex-direction: column;   
+    }
+   
 }
 
 
@@ -1480,4 +1538,11 @@ display: none;
     .wrapper-greenblue__background::after {
         height: 450px;
     }
+    .Look-at-this-beautiful__info-card:nth-child(4) {
+        display: none;
+    }
+    .Look-at-this-beautiful__info-card:nth-child(3) {
+        display: none;
+    }
+    
 }
