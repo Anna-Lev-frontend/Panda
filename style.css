@@ -404,6 +404,14 @@ html {
     align-items: center;
 }
 
+.pets-in-zoo__column-control {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    align-items: center;
+}
+
 .card {
     background: #FFFFFF;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
@@ -412,14 +420,17 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
+    width: 100%;
+
 }
 
 .card__footer {
     display: flex;
     margin-top: 32px;
     justify-content: space-between;
-    padding: 20px 20px 0 20px;
-    width: 480px;
+    padding: 20px 20px 20px 20px;
+    max-width: 480px;
+    width: 100%;
 }
 
 .pets-in-zoo {
@@ -1219,11 +1230,7 @@ html {
 
 }
 
-@media (max-width: 1550px) {
-    .pets-in-zoo__column:nth-child(3) {
-        display: none;
-    }
-}
+
 
 
 @media (max-width: 1400px) {
@@ -1242,9 +1249,7 @@ html {
 
     }
 
-    .pets-in-zoo__column:nth-child(3) {
-        display: none;
-    }
+
 }
 
 @media (max-width: 1200px) {
@@ -1315,8 +1320,12 @@ html {
     .pets-in-zoo__column:nth-child(2) {
         display: none;
     }
+
     .side-cameras__info-card:nth-child(3) {
         display: none;
+    }
+    .main__content {
+        padding: 0;
     }
 }
 
@@ -1350,13 +1359,16 @@ html {
     .giant-pandas__arrow {
         margin-left: 10px;
     }
+
     .side-cameras__info-card:nth-child(2) {
         display: none;
         align-items: center;
     }
+
     .side-cameras__content {
         padding: 20px 230px;
     }
+
     .main__column {
         flex-direction: column;
     }
@@ -1436,7 +1448,7 @@ html {
     }
 
 
-    
+
 
     .footer__about-site {
         size: 10px;
@@ -1474,12 +1486,16 @@ html {
     .header__buttons {
         display: none;
     }
+
     .Look-at-this-beautiful__info-card:nth-child(7) {
         display: none;
     }
+
     .Look-at-this-beautiful__content {
         padding: 5px;
     }
+
+
 }
 
 @media (max-width: 640px) {
@@ -1502,14 +1518,21 @@ html {
     .feedback {
         padding: 20px;
     }
+
     .testimonials__feedback {
         flex-direction: column;
     }
-    }
+
     .Look-at-this-beautiful__info-card:nth-child(6) {
         display: none;
     }
-   
+    .pets-in-zoo__column:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
 
 
 
@@ -1517,19 +1540,26 @@ html {
     .wrapper-greenblue__background::after {
         height: 386px;
     }
+
     .Look-at-this-beautiful__info-card:nth-child(5) {
         display: none;
     }
+
     .Look-at-this-beautiful__info-card:nth-child(4) {
         display: none;
     }
+
     .testimonials__header {
         flex-direction: column;
     }
+
     .pay-and-feed__header {
-     flex-direction: column;   
+        flex-direction: column;
     }
-   
+
+    .pets-in-zoo__header {
+        flex-direction: column;
+    }
 }
 
 
@@ -1538,11 +1568,13 @@ html {
     .wrapper-greenblue__background::after {
         height: 450px;
     }
+
     .Look-at-this-beautiful__info-card:nth-child(4) {
         display: none;
     }
+
     .Look-at-this-beautiful__info-card:nth-child(3) {
         display: none;
     }
-    
+
 }
