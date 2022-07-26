@@ -804,7 +804,7 @@ html {
 
 .giant-pandas__navigation_list {
     list-style-type: none;
-    margin: 37px 50px 40px 0px;
+   padding: 20px;
 }
 
 .giant-pandas__content {
@@ -957,7 +957,7 @@ html {
     border-radius: 19.5469px;
     max-width: 1324px;
     max-height: 604px;
-    width: 83vw;
+    width: 72vw;
     height: 39vw;
 
 }
@@ -1317,7 +1317,7 @@ html {
         bottom: -60px
     }
 
-    .pets-in-zoo__column:nth-child(2) {
+    .pets-in-zoo__column:nth-child(3) {
         display: none;
     }
 
@@ -1360,17 +1360,13 @@ html {
         margin-left: 10px;
     }
 
-    .side-cameras__info-card:nth-child(2) {
-        display: none;
-        align-items: center;
-    }
-
-    .side-cameras__content {
-        padding: 20px 230px;
-    }
-
+   
+    
     .main__column {
         flex-direction: column;
+    }
+    .pets-in-zoo__column:nth-child(2) {
+        display: none;
     }
 }
 
@@ -1474,7 +1470,7 @@ html {
 
     }
 
-    .header {
+    .navigation {
         justify-content: space-between;
     }
 
@@ -1494,8 +1490,14 @@ html {
     .Look-at-this-beautiful__content {
         padding: 5px;
     }
-
-
+    .header {
+        position: relative;
+    }
+    .header__navigation {
+        position: absolute;
+       
+    }
+    
 }
 
 @media (max-width: 640px) {
@@ -1526,10 +1528,12 @@ html {
     .Look-at-this-beautiful__info-card:nth-child(6) {
         display: none;
     }
-    .pets-in-zoo__column:nth-child(2) {
+    .side-cameras__info-card:nth-child(2) {
         display: none;
     }
-}
+    
+    }
+
 
 
 
@@ -1560,6 +1564,15 @@ html {
     .pets-in-zoo__header {
         flex-direction: column;
     }
+    .main__section {
+        flex-direction: column;
+    }
+    .main__navigation {
+        overflow: hidden;
+        height: 117px;
+        background-color: #2A8086;;
+    }
+
 }
 
 
