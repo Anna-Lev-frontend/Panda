@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/Logo-large.svg" type="image/png">
+    <link rel="icon" href="./images/Logo-large.svg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./normolize.css">
@@ -24,10 +24,10 @@
                         <a class="navigation__link" href="#">ABOUT</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">MAP</a>
+                        <a class="navigation__link" target=_blank href="./MAP.html">MAP</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#">ZOOS</a>
+                        <a class="navigation__link" target=_blank href="./zoos-panda.html">ZOOS</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">CONTACT US</a>
@@ -40,9 +40,11 @@
             </nav>
             <aside class="header__buttons">
                 <img class="header__search" src="./images/Frame.svg" alt="search">
-                <button class="header__button header__button_log-in">LOG IN</button>
-                <button class="header__button header__button_sign-up">SIGN UP</button>
+                <button class="header__button header__button_log-in" id="log-in">LOG IN</button>
+                <button class="header__button header__button_sign-up" id="sign-up">SIGN UP</button>
+
             </aside>
+            <img class="header__burger-menu" src="./images/Burger-menu.svg" alt="burger-menu">
         </header>
     </div>
     <main class="main">
@@ -52,16 +54,17 @@
                 <div class="animals-online__content">
 
                     <h1 class="animals-online__title">
-                        Watch your favorite <br>
+                        Watch your favorite<br>
                         animals online
                     </h1>
                     <p class="animals-online__text">Observe different animals from around the world online in live
                         time. Help vulunteers to take a
                         good care of animals, donate to your favorite ones.</p>
-                    <button class="animals-online__button">Watch now</button>
+                    <a target=_blank href="./map.html"><button class="animals-online__button">Watch
+                            now</button></a>
                 </div>
 
-                <img class="animals-online__photo" src="/images/Panda.png" alt="Panda">
+                <img class="animals-online__photo" src="./images/Panda.png" alt="Panda"></a>
 
             </section>
         </div>
@@ -76,7 +79,7 @@
                 <div class="how-it-works__content">
                     <article class="how-it-works__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icons-binoculars.svg" alt="binoculars">
+                            <img src="./images/icons-binoculars.svg" alt="binoculars">
                         </div>
                         <p class="info-card__text">
                             Keep an eye on your favourite animals online
@@ -84,7 +87,7 @@
                     </article>
                     <article class="how-it-works__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icons-dog-paw-print.svg" alt="dog-paw-print">
+                            <img src="./images/icons-dog-paw-print.svg" alt="dog-paw-print">
                         </div>
                         <p class="info-card__text">
                             Become a part of the communtity
@@ -92,7 +95,7 @@
                     </article>
                     <article class="how-it-works__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icons-trust.svg" alt="trust">
+                            <img src="./images/icons-trust.svg" alt="trust">
                         </div>
                         <p class="info-card__text">
                             Support animals with the donations
@@ -105,7 +108,7 @@
 
 
         <div class="wrapper-white">
-            <img class="main__illustration" src="/images/Illustrations.svg" alt="illustration">
+            <img class="main__illustration" src="./images/Illustrations.svg" alt="illustration">
         </div>
 
 
@@ -127,95 +130,99 @@
                 <div class="pets-in-zoo__table">
                     <div class="pets-in-zoo__column">
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Mask Group.png" alt="Pandas">
+                            <img class="card__image" src="./images/Mask Group.png" alt="Pandas">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Pandas</b>
                                     <br>
                                     Shenshuping Gengda Panda Center
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./zoos-panda.html"><img src="./images/icon-tv.svg"
+                                        alt="icon-tv"></a>
                             </div>
                         </article>
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Aligator.png" alt="Alligators">
+                            <img class="card__image" src="./images/Aligator.png" alt="Alligators">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Alligators</b>
                                     <br>
                                     St. Augustine's Alligator Farm Zoological Park
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./zoos-aligator.html"><img src="./images/icon-tv.svg"
+                                        alt="icon-tv"></a>
                             </div>
                         </article>
                     </div>
 
                     <div class="pets-in-zoo__column">
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Eagle.png" alt="Eagles">
+                            <img class="card__image" src="./images/Eagle.png" alt="Eagles">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Eagles</b>
                                     <br>
                                     Catalina Island
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./zoos-eagle.html"><img src="./images/icon-tv.svg"
+                                        alt="icon-tv"></a>
                             </div>
                         </article>
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Elephant.png" alt="Elephants">
+                            <img class="card__image" src="./images/Elephant.png" alt="Elephants">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Elephants</b>
                                     <br>
                                     Tembe Elephant Park
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./404.html"><img src="./images/icon-tv.svg" alt="icon-tv"></a>
                             </div>
                         </article>
                     </div>
 
                     <div class="pets-in-zoo__column">
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Gorila.png" alt="Gorillas">
+                            <img class="card__image" src="./images/Gorila.png" alt="Gorillas">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Gorillas</b>
                                     <br>
                                     GRACE gorillas
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./zoos-gorilla.html"><img src="./images/icon-tv.svg"
+                                        alt="icon-tv"></a>
                             </div>
                         </article>
                         <article class="pets-in-zoo__card card">
-                            <img class="card__image" src="/images/Lemur.png" alt="Lemurs">
+                            <img class="card__image" src="./images/Lemur.png" alt="Lemurs">
                             <div class="card__footer">
                                 <p class="card__title">
                                     <b>Lemurs</b>
                                     <br>
                                     Madagascar
                                 </p>
-                                <img src="/images/icon-tv.svg" alt="icon-tv">
+                                <a target=_blank href="./404.html"><img src="./images/icon-tv.svg" alt="icon-tv"></a>
                             </div>
                         </article>
                     </div>
-                    <div class="pets-in-zoo__column">
+                    <div class="pets-in-zoo__column-control">
                         <div class="pets-in-zoo__column-controls">
                             <button class="pets-in-zoo__arrow">
-                                <img src="/images/logo-left.svg" alt="logo-left">
+                                <img src="./images/logo-left.svg" alt="logo-left">
                             </button>
                             <button class="pets-in-zoo__arrow">
-                                <img class="card__logo" src="/images/logo-right.svg" alt="logo-right">
+                                <img class="card__logo" src="./images/logo-right.svg" alt="logo-right">
                             </button>
                         </div>
-                        <img class="pets-in-zoo__image" src="/images/Penguin.svg" alt="logo-penguin">
+                        <img class="pets-in-zoo__image" src="./images/Penguin.svg" alt="logo-penguin">
                     </div>
                 </div>
             </section>
         </div>
 
 
-        <div class="wrapper-white wrapper-greenblue__pay-and-feed">
+        <div class="wrapper-greenblue wrapper-greenblue__pay-and-feed">
             <section class="main__section pay-and-feed">
                 <header class="pay-and-feed__header">
 
@@ -232,7 +239,7 @@
                 <div class="pay-and-feed__content">
                     <article class="pay-and-feed__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icon-pay.svg" alt="pay">
+                            <img src="./images/icon-pay.svg" alt="pay">
                         </div>
                         <p class="info-card__texts">
                             You donate to your favourite animals
@@ -240,14 +247,14 @@
                     </article>
 
                     <div class="info-card__vector">
-                        <img class="lines" src="/images/lines.svg" alt="lines">
-                        <img src="/images/arrow-white.svg" alt="arrow-white">
+                        <img class="lines" src="./images/lines.svg" alt="lines">
+                        <img src="./images/arrow-white.svg" alt="arrow-white">
 
                     </div>
 
                     <article class="pay-and-feed__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icons-trust.svg" alt="trust">
+                            <img src="./images/icons-trust.svg" alt="trust">
                         </div>
                         <p class="info-card__texts">
                             Zoo Keepers feed animals with their favourite food
@@ -255,14 +262,14 @@
                     </article>
 
                     <div class="info-card__vector">
-                        <img class="lines" src="/images/lines.svg" alt="lines">
-                        <img src="/images/arrow-white.svg" alt="arrow-white">
+                        <img class="lines" src="./images/lines.svg" alt="lines">
+                        <img src="./images/arrow-white.svg" alt="arrow-white">
 
                     </div>
 
                     <article class="pay-and-feed__info-card info-card">
                         <div class="info-card__image">
-                            <img src="/images/icon-monkey.svg" alt="monkey">
+                            <img src="./images/icon-monkey.svg" alt="monkey">
                         </div>
                         <p class="info-card__texts">
                             Animals are healthy and happy
@@ -293,7 +300,7 @@
                             great.
                         </p>
                         <div class="feedback__person">
-                            <img src="/images/feedback1.svg" alt="feedback1">
+                            <img src="./images/feedback1.svg" alt="feedback1">
                             <p class="feedback__contact">Adam, Spain</p>
                         </div>
                     </article>
@@ -304,7 +311,7 @@
                             great.
                         </p>
                         <div class="feedback__person">
-                            <img src="/images/feedback2.svg" alt="feedback2">
+                            <img src="./images/feedback2.svg" alt="feedback2">
                             <p class="feedback__contact">Chris, Australia</p>
                         </div>
                     </article>
@@ -315,7 +322,7 @@
                             great.
                         </p>
                         <div class="feedback__person">
-                            <img src="/images/feedback3.svg" alt="feedback3">
+                            <img src="./images/feedback3.svg" alt="feedback3">
                             <p class="feedback__contact">Adam, Spain</p>
                         </div>
                     </article>
@@ -334,7 +341,8 @@
                 <div class="Look-at-this-beautiful__content">
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-panda.png" alt="Pandas">
+                            <a target=_blank href="./zoos-panda.html"><img src="./images/mini-panda.png"
+                                    alt="Pandas"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Pandas
@@ -343,7 +351,8 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-gorila.png" alt="Gorillas">
+                            <a target=_blank href="./zoos-gorilla.html"><img src="./images/mini-gorila.png"
+                                    alt="Gorillas"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Gorillas
@@ -352,7 +361,8 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-eagle.png" alt="Eagles">
+                            <a target=_blank href="./zoos-eagle.html"><img src="./images/mini-eagle.png"
+                                    alt="Eagles"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Eagles
@@ -361,7 +371,8 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-aligator.png" alt="Aligators">
+                            <a target=_blank href="./zoos-eagle.html"><img src="./images/mini-aligator.png"
+                                    alt="Aligators"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Aligators
@@ -370,7 +381,8 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-elephant.png" alt="Elephants">
+                            <a target=_blank href="./404.html"><img src="./images/mini-elephant.png"
+                                    alt="Elephants"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Elephants
@@ -379,7 +391,7 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-lemur.png" alt="Lemurs">
+                            <a target=_blank href="./404.html"><img src="./images/mini-lemur.png" alt="Lemurs"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Lemurs
@@ -389,7 +401,8 @@
 
                     <article class="Look-at-this-beautiful__info-card info-card">
                         <div class="Look-at-this-beautiful__image">
-                            <img src="/images/mini-panda.png" alt="Pandas">
+                            <a target=_blank href="./zoos-panda.html"><img src="./images/mini-panda.png"
+                                    alt="Pandas"></a>
                         </div>
                         <p class="Look-at-this-beautiful__text">
                             Pandas
@@ -398,10 +411,10 @@
 
                     <div class="Look-at-this-beautiful__column">
                         <button class="Look-at-this-beautiful__arrow">
-                            <img class="card__logo" src="/images/logo-left.svg" alt="logo-left">
+                            <img class="card__logo" src="./images/logo-left.svg" alt="logo-left">
                         </button>
                         <button class="Look-at-this-beautiful__arrow">
-                            <img class="card__logo" src="/images/logo-right.svg" alt="logo-right">
+                            <img class="card__logo" src="./images/logo-right.svg" alt="logo-right">
                         </button>
                     </div>
                 </div>
@@ -443,7 +456,86 @@
         </footer>
     </div>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
 
+            <header class="popup__header">
+                <img class="popup__header-logo" src="./images/Logo-large.svg" alt="logo">
+                <div class="popup__close" id="popup__close">
+popup__close
+                </div>
+            </header>
+
+            <main class="popup__main">
+                <div class="popup__tabs">
+                    <button class="popup__tab popup__tab_active">
+                        Create acccount
+                    </button>
+                    <button class="popup__tab">
+                        Log in
+                    </button>
+
+                </div>
+
+                <section class="popup__butten">
+                    <button class="butten__google">
+                        <img class="google__icon" src="./images/Google__Logo.svg"> Google Sign in
+                    </button>
+                    <button class="butten__facebook">
+                        <img class="facebook__icon" src="./images/logo__facebook.svg">
+                        Facebook Sign in
+                    </button>
+                </section>
+
+                <form class="popup__form">
+
+                    <label class="popup__form popup__form_label">
+                        name
+                        <input class="popup__form_input" name="answertext">
+                    </label>
+
+
+
+
+
+                    <label class="popup__form popup__form_label">
+                        email
+                        <input class="popup__form_input" name="answertext">
+                    </label>
+
+
+
+
+
+                    <label class="popup__form popup__form_label">
+                        password
+                        <input class="popup__form_input" name="passwordtext">
+                    </label>
+
+
+
+
+                </form>
+
+                <div class="popup__agree-form">
+                    <input class="popup__agree-form popup__agree-form_coment" id="comment" type="checkbox"
+                        name="comment" value="yes">
+                    <label class="popup__agree-form popup__agree-form_inline" for="comment">Agree with the User
+                        Agreement and
+                        Privacy Policy </label>
+                </div>
+                <section class="popup__send">
+                    <button class="butten__send">
+                        send
+                    </button>
+
+                </section>
+
+            </main>
+        </div>
+        <div class="popup__background"></div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 

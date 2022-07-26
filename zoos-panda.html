@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/Logo-large.svg" type="image/png">
+    <link rel="icon" href="./images/Logo-large.svg" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./normolize.css">
@@ -20,13 +20,13 @@
             <img class="header__logo" src="./images/Logo-large.svg" alt="logo">
             <nav class="header__navigation navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item navigation__item_active">
+                    <li class="navigation__item">
                         <a class="navigation__link" href="#">ABOUT</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">MAP</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item navigation__item_active">
                         <a class="navigation__link" href="#">ZOOS</a>
                     </li>
                     <li class="navigation__item">
@@ -43,6 +43,7 @@
                 <button class="header__button header__button_log-in">LOG IN</button>
                 <button class="header__button header__button_sign-up">SIGN UP</button>
             </aside>
+            <img class="header__burger-menu" src="./images/Burger-menu.svg" alt="burger-menu">
         </header>
     </div>
 
@@ -51,11 +52,33 @@
             <div class="main__section">
                 <nav class="main__navigation">
                     <ul class="giant-pandas__navigation_list">
-                        <li><img src="/images/mini-first-panda.png" alt="panda"></li>
-                        <li><img src="/images/mini-first-eagle.png" alt="eagle"></li>
-                        <li><img src="/images/mini-fisrt-gorilas.png" alt="gorila"></li>
-                        <li><img src="/images/mini-fist-aligator.png" alt="aligator"></li>
-                    </ul>
+                        <li>
+                            <a class="main__video-link main__video-link_active" target=_blank href="#">
+                                
+                               
+                            </a>
+                            <p>PANDAS</p>
+                        </li>
+                        <li>
+                            <a class="main__video-link-eagle" target=_blank href="./zoos-eagle.html">
+                               
+                            </a>
+                            <p>EAGLES</p>
+                        </li>
+                        <li>
+                            <a class="main__video-link-gorila" target=_blank href="./zoos-gorilla.html">
+                               
+                            </a>
+                            <p>GORILAS</p>
+                        </li>
+                        <li>
+                            <a class="main__video-link-aligator" target=_blank
+                                href="./zoos-aligator.html">
+                                
+                               
+                            </a>
+                            <p>ALIGATORS</p>
+                        </li>
                 </nav>
                 <section class="main__content">
 
@@ -65,19 +88,18 @@
                         </h1>
                         <div class="giant-pandas__button">
                             <button class="giant-pandas__arrow">
-                                <img src="/images/Bttn1.svg" alt="logo-bttn1">
+                                <img src="./images/Bttn1.svg" alt="logo-bttn1">
                             </button>
                             <button class="giant-pandas__arrow">
-                                <img src="/images/Bttn2.svg" alt="logo-bttn2">
+                                <img src="./images/Bttn2.svg" alt="logo-bttn2">
                             </button>
                         </div>
                     </header>
 
                     <section class="main__cameras">
-                        <h1 class="giant-pandas__text">Main Cameras</h1>
-                        <iframe class="video-panda" width="1324" height="604"
-                            src="https://www.youtube.com/embed/dqT-UlYlg1s" title="Giant Pandas 101 | Nat Geo Wild"
-                            frameborder="0"
+                        <h1 class="giant-pandas__text">Videos</h1>
+                        <iframe class="video" src="https://www.youtube.com/embed/dqT-UlYlg1s"
+                            title="Giant Pandas 101 | Nat Geo Wild" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                         </iframe>
@@ -85,33 +107,43 @@
 
                     <section class="main__side-cameras">
                         <h1 class="side-cameras__title">
-                            side cameras
+                            Side videos
                         </h1>
 
                         <div class="side-cameras__content">
                             <article class="side-cameras__info-card">
-                                <div class="side-cameras__image">
-                                    <img src="/images/slide1.png" alt="slide1">
-                                </div>
+
+                                <iframe class="video__side-cameras" src="https://www.youtube.com/embed/CpK1lZJmbJY"
+                                    title="Panda cub and nanny’s “war"" frameborder=" 0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </article>
+
+                            <article class=" side-cameras__info-card">
+
+                                <iframe class="video__side-cameras" src="https://www.youtube.com/embed/OevbuYwXDw4"
+                                    title="Broadcast Top Highlights 直播精彩集錦 喝瓶瓶奶" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
                             </article>
 
                             <article class="side-cameras__info-card">
-                                <div class="side-cameras__image">
-                                    <img src="/images/slide2.png" alt="slide2">
-                                </div>
-                            </article>
 
-                            <article class="side-cameras__info-card">
-                                <div class="side-cameras__image">
-                                    <img src="/images/slide3.png" alt="slide3">
-                                </div>
+                                <iframe class="video__side-cameras" src="https://www.youtube.com/embed/9UacDU_joOE"
+                                    title="Immersive Interaction With Twin Panda Babies Meng Bao & Meng Yu (2018.11.25 Live Replay) | iPanda"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
                             </article>
                             <div class="Look-at-this-beautiful__column">
                                 <button class="Look-at-this-beautiful__arrow">
-                                    <img class="card__logo" src="/images/logo-left.svg" alt="logo-left">
+                                    <img class="card__logo" src="./images/logo-left.svg" alt="logo-left">
                                 </button>
                                 <button class="Look-at-this-beautiful__arrow">
-                                    <img class="card__logo" src="/images/logo-right.svg" alt="logo-right">
+                                    <img class="card__logo" src="./images/logo-right.svg" alt="logo-right">
                                 </button>
                             </div>
                         </div>
@@ -163,7 +195,7 @@
                             <p class="information__text">The yards at Shenshuping Gengda Panda Center in China's
                                 Wolong
                                 Valley
-                                are filled<br> with
+                                are filled with
                                 bamboo--making for some very happy panda residents.
                             </p>
                         </section>
@@ -172,57 +204,59 @@
                             <h1 class="information__title-facts">
                                 Interesting Facts
                             </h1>
-                            <nav class="navigation__fact-content">
-                                <ul class="navigation__fact-list">
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        The Giant Pandas are
-                                        omnivores. But whilst pandas will occasionally eat small animals and
-                                        fish, bamboo counts for 99 percent of their diet.
-                                    </li>
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        Pandas are BIG eaters – every day they fill their tummies for up to 12
-                                        hours,
-                                        shifting up
-                                        to 12 kilograms of bamboo.
-                                    </li>
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        The giant panda’s scientific name is Ailuropoda melanoleuca, which means
-                                        “black
-                                        and
-                                        white
-                                        cat-foot”.
-                                    </li>
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        Female pandas give birth to one or two cubs every two years. Cubs stay with
-                                        their
-                                        mothers
-                                        for 18 months before venturing off on their own.
-                                    </li>
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        Baby pandas are born pink and measure about 15cm.
-                                    </li>
-                                    <li class="navigation__fact-item">
-                                        <img class="navigation__fact-text" src="/images/ul.svg" alt="ul">
-                                        These beautiful bears are endangered, and it’s estimated that only around
-                                        1,000
-                                        remain in
-                                        the wild. That’s why we need to do all we can to protect them!
-                                    </li>
-                                </ul>
+
+                            <ul class="navigation__fact-list">
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    The Giant Pandas are
+                                    omnivores. But whilst pandas will occasionally eat small animals and
+                                    fish, bamboo counts for 99 percent of their diet.
+                                </li>
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    Pandas are BIG eaters – every day they fill their tummies for up to 12
+                                    hours,
+                                    shifting up
+                                    to 12 kilograms of bamboo.
+                                </li>
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    The giant panda’s scientific name is Ailuropoda melanoleuca, which means
+                                    “black
+                                    and
+                                    white
+                                    cat-foot”.
+                                </li>
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    Female pandas give birth to one or two cubs every two years. Cubs stay with
+                                    their
+                                    mothers
+                                    for 18 months before venturing off on their own.
+                                </li>
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    Baby pandas are born pink and measure about 15cm.
+                                </li>
+                                <li class="navigation__fact-item">
+                                    <img class="navigation__fact-text" src="./images/ul.svg" alt="ul">
+                                    These beautiful bears are endangered, and it’s estimated that only around
+                                    1,000
+                                    remain in
+                                    the wild. That’s why we need to do all we can to protect them!
+                                </li>
+                            </ul>
                         </section>
+
+
                     </div>
                 </section>
             </div>
             <div class="wrapper-white">
-                <img class="donate__illustration" src="/images/Donate-illustrations.svg" alt="donate-illustration">
+                <img class="donate__illustration" src="./images/Donate-illustrations.svg" alt="donate-illustration">
             </div>
         </div>
-        
+
     </main>
 
 
@@ -233,13 +267,13 @@
             <img class="footer__logo" src="./images/Logo-large.svg" alt="logo">
             <nav class="footer__navigation navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item navigation__item_active">
+                    <li class="navigation__item">
                         <a class="navigation__link" href="#">ABOUT</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">MAP</a>
                     </li>
-                    <li class="navigation__item">
+                    <li class="navigation__item navigation__item_active">
                         <a class="navigation__link" href="#">ZOOS</a>
                     </li>
                     <li class="navigation__item">
