@@ -736,7 +736,6 @@ html {
     height: 915px;
 }
 
-
 .info-card-map__aligator,
 .info-card-map__panda,
 .info-card-map__gorila,
@@ -759,7 +758,6 @@ html {
     background-size: contain;
     top: -8px;
     left: -13px;
-
 }
 
 .info-card-map__eagle {
@@ -804,7 +802,7 @@ html {
 
 .giant-pandas__navigation_list {
     list-style-type: none;
-   padding: 20px;
+    padding: 20px;
 }
 
 .giant-pandas__content {
@@ -1032,6 +1030,11 @@ html {
     height: 73px;
     position: relative;
     background-image: url(./images/mini-aligator.png);
+}
+
+.main__video-link a {
+    
+text-decoration: none;
 }
 
 .page404 {
@@ -1324,6 +1327,7 @@ html {
     .side-cameras__info-card:nth-child(3) {
         display: none;
     }
+
     .main__content {
         padding: 0;
     }
@@ -1360,11 +1364,12 @@ html {
         margin-left: 10px;
     }
 
-   
-    
+
+
     .main__column {
         flex-direction: column;
     }
+
     .pets-in-zoo__column:nth-child(2) {
         display: none;
     }
@@ -1490,14 +1495,16 @@ html {
     .Look-at-this-beautiful__content {
         padding: 5px;
     }
+
     .header {
         position: relative;
+        justify-content: space-between;
     }
+
     .header__navigation {
         position: absolute;
-       
     }
-    
+
 }
 
 @media (max-width: 640px) {
@@ -1528,11 +1535,12 @@ html {
     .Look-at-this-beautiful__info-card:nth-child(6) {
         display: none;
     }
+
     .side-cameras__info-card:nth-child(2) {
         display: none;
     }
-    
-    }
+
+}
 
 
 
@@ -1564,13 +1572,16 @@ html {
     .pets-in-zoo__header {
         flex-direction: column;
     }
+
     .main__section {
         flex-direction: column;
     }
+
     .main__navigation {
         overflow: hidden;
         height: 117px;
-        background-color: #2A8086;;
+        background-color: #2A8086;
+        ;
     }
 
 }
