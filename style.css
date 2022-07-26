@@ -1084,6 +1084,7 @@ html {
     display: none;
 
 }
+
 .popup.visible {
     display: flex;
 }
@@ -1124,6 +1125,16 @@ html {
     border-radius: 20px;
 
 }
+
+.popup__close {
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+
 
 .popup__tabs {
     display: flex;
