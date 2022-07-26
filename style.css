@@ -979,20 +979,24 @@ html {
     color: #F3F7F8;
 }
 
-.main__video-link {
+.main__video-link,
+.main__video-link-eagle,
+.main__video-link-gorila,
+.main__video-link-aligator {
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
     width: 76px;
     height: 73px;
     position: relative;
     background-image: url(./images/mini-panda.png);
+    display: block;
 }
 
-.main__video-link:hover::after,
-.main__video-link-eagle:hover::after,
-.main__video-link-gorila:hover::after,
-.main__video-link-aligator:hover::after,
-.main__video-link_active::after {
+.main__video-link:hover::before,
+.main__video-link-eagle:hover::before,
+.main__video-link-gorila:hover::before,
+.main__video-link-aligator:hover::before,
+.main__video-link_active::before {
     content: "";
     background-image: url(./images/box-shadow.svg);
     width: 113px;
@@ -1006,35 +1010,23 @@ html {
 }
 
 .main__video-link-eagle {
-    cursor: pointer;
-    border-radius: 10px 10px 10px 10px;
-    width: 76px;
-    height: 73px;
-    position: relative;
+
     background-image: url(./images/mini-eagle.png);
 }
 
 .main__video-link-gorila {
-    cursor: pointer;
-    border-radius: 10px 10px 10px 10px;
-    width: 76px;
-    height: 73px;
-    position: relative;
+
     background-image: url(./images/mini-gorila.png);
 }
 
 .main__video-link-aligator {
-    cursor: pointer;
-    border-radius: 10px 10px 10px 10px;
-    width: 76px;
-    height: 73px;
-    position: relative;
+
     background-image: url(./images/mini-aligator.png);
 }
 
 .main__video-link a {
-    
-text-decoration: none;
+
+    text-decoration: none;
 }
 
 .page404 {
@@ -1079,68 +1071,81 @@ text-decoration: none;
 }
 
 .popup {
-    position: fixed;
     width: 100%;
-    max-width: 568px;
     height: 100%;
-    max-height: 774px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
-    border-radius: 20px;
-    padding: 32px 60px 46px 60px;
+    overflow: hidden;
+    z-index: 10;
+    display: none;
 
+}
+.popup.visible {
+    display: flex;
+}
+
+.popup__background {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
 }
 
 .popup__header {
     background-color: #2A8086;
+
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0;
 }
 
-.popup__header-logo {
-    width: 108px;
-    height: 83.61px;
+.popup__main {
+    padding: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .popup__content {
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     background-color: #C5E1E5;
-    padding: 32px 149px 20px 90px;
+
+    z-index: 12;
+    position: relative;
+    flex-direction: column;
+    border-radius: 20px;
+
 }
 
-.popup__text {
-    min-height: 100%;
-    padding: 0px 0px 0px 0px;
-    font-style: normal;
+.popup__tabs {
+    display: flex;
+}
+
+.popup__tab {
+
+    padding: 5px;
+    text-transform: uppercase;
+    border: none;
+    background-color: inherit;
+    padding-bottom: 20px;
+    border-bottom: 2px solid red;
+
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    padding-right: 109px;
+    flex: 1;
+
 }
 
-.popup__line {
-    display: flex;
-    align-items: center;
-    background-color: #C5E1E5;
-}
-
-.popup__line1 {
-    border: 1px solid;
-    width: 224px;
-    height: 1px;
-    padding-top: 20px;
-    background: #2A8086;
-}
-
-.popup__line2 {
-    border: 1px solid;
-    width: 224px;
-    height: 2px;
-    padding-top: 20px;
-    background: #FFFFFF;
+.popup__tab.popup__tab_active {
+    border-bottom: solid 2px green;
 }
 
 .popup__butten {
@@ -1175,6 +1180,9 @@ text-decoration: none;
 
 .popup__form {
     background-color: #C5E1E5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .popup__form_label {
@@ -1186,7 +1194,7 @@ text-decoration: none;
     color: #0D444D;
 }
 
-.popup__form_textarea {
+.popup__form_input {
     background: #FFFFFF;
     box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
     border-radius: 10px;

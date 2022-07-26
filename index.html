@@ -40,9 +40,9 @@
             </nav>
             <aside class="header__buttons">
                 <img class="header__search" src="./images/Frame.svg" alt="search">
-                <button class="header__button header__button_log-in">LOG IN</button>
-                <button class="header__button header__button_sign-up">SIGN UP</button>
-                
+                <button class="header__button header__button_log-in" id="log-in">LOG IN</button>
+                <button class="header__button header__button_sign-up" id="sign-up">SIGN UP</button>
+
             </aside>
             <img class="header__burger-menu" src="./images/Burger-menu.svg" alt="burger-menu">
         </header>
@@ -456,7 +456,86 @@
         </footer>
     </div>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
 
+            <header class="popup__header">
+                <img class="popup__header-logo" src="./images/Logo-large.svg" alt="logo">
+                <div class="popup__close" id="popup__close">
+popup__close
+                </div>
+            </header>
+
+            <main class="popup__main">
+                <div class="popup__tabs">
+                    <button class="popup__tab popup__tab_active">
+                        Create acccount
+                    </button>
+                    <button class="popup__tab">
+                        Log in
+                    </button>
+
+                </div>
+
+                <section class="popup__butten">
+                    <button class="butten__google">
+                        <img class="google__icon" src="./images/Google__Logo.svg"> Google Sign in
+                    </button>
+                    <button class="butten__facebook">
+                        <img class="facebook__icon" src="./images/logo__facebook.svg">
+                        Facebook Sign in
+                    </button>
+                </section>
+
+                <form class="popup__form">
+
+                    <label class="popup__form popup__form_label">
+                        name
+                        <input class="popup__form_input" name="answertext">
+                    </label>
+
+
+
+
+
+                    <label class="popup__form popup__form_label">
+                        email
+                        <input class="popup__form_input" name="answertext">
+                    </label>
+
+
+
+
+
+                    <label class="popup__form popup__form_label">
+                        password
+                        <input class="popup__form_input" name="passwordtext">
+                    </label>
+
+
+
+
+                </form>
+
+                <div class="popup__agree-form">
+                    <input class="popup__agree-form popup__agree-form_coment" id="comment" type="checkbox"
+                        name="comment" value="yes">
+                    <label class="popup__agree-form popup__agree-form_inline" for="comment">Agree with the User
+                        Agreement and
+                        Privacy Policy </label>
+                </div>
+                <section class="popup__send">
+                    <button class="butten__send">
+                        send
+                    </button>
+
+                </section>
+
+            </main>
+        </div>
+        <div class="popup__background"></div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 
