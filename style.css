@@ -1535,11 +1535,6 @@ html {
         justify-content: space-between;
     }
 
-    .navigation {
-        display: none;
-
-    }
-
     .header__buttons {
         display: none;
     }
@@ -1559,6 +1554,7 @@ html {
 
     .info-card__vector {
         margin-bottom: 20px;
+        transform: rotate(90deg);
     }
 }
 
