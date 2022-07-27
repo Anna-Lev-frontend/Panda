@@ -1610,12 +1610,6 @@ html {
 
 }
 
-
-
-
-
-
-
 @media (max-width: 480px) {
     .wrapper-greenblue__background::after {
         height: 386px;
@@ -1649,16 +1643,12 @@ html {
         overflow: hidden;
         height: 117px;
         background-color: #2A8086;
-
     }
 
     .header__burger-menu {
         display: block;
     }
-
 }
-
-
 
 @media (max-width: 330px) {
     .wrapper-greenblue__background::after {
@@ -1672,5 +1662,4 @@ html {
     .Look-at-this-beautiful__info-card:nth-child(3) {
         display: none;
     }
-
 }
