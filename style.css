@@ -94,27 +94,17 @@ html {
     margin-right: 52px;
 }
 
-.header__navigation_list {
-    margin-left: 50px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    justify-content: left;
-    gap: 20px;
-    font-size: 1.0em;
-}
-
+.header__navigation_list,
 .footer__navigation_list {
     margin-left: 50px;
     color: white;
     display: flex;
     justify-content: space-between;
     width: 100%;
-
     gap: 20px;
     font-size: 1.0em;
 }
+
 
 .navigation__link:hover {
     color: #C5E1E6;
@@ -1409,8 +1399,6 @@ html {
         margin-left: 10px;
     }
 
-
-
     .main__column {
         flex-direction: column;
     }
@@ -1419,8 +1407,7 @@ html {
         display: none;
     }
 
-    .header__navigation.navigation,
-    .footer__navigation.navigation {
+    .header__navigation.navigation {
         height: 300px;
         position: absolute;
         width: 100%;
@@ -1429,8 +1416,7 @@ html {
         bottom: -300px;
     }
 
-    .header__navigation_list,
-    .footer__navigation_list {
+    .header__navigation_list {
         display: block;
         margin-left: 0px;
         text-align: center;
@@ -1441,7 +1427,9 @@ html {
         padding: 15px 0;
     }
 
-
+    .footer__navigation_list {
+        display: none;
+    }
 
     .navigation__item.navigation__item_active {
         list-style: none;
@@ -1568,8 +1556,6 @@ html {
         position: relative;
         justify-content: space-between;
     }
-
-
 
     .info-card__vector {
         margin-bottom: 20px;
