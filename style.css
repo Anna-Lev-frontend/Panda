@@ -96,7 +96,7 @@ html {
 
 .header__navigation_list,
 .footer__navigation_list {
-    margin-left: 50px;
+    margin-left: 5px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -1366,6 +1366,11 @@ html {
     .lines {
         width: 35%;
     }
+
+    .header__navigation_list,
+    .footer__navigation_list {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1407,7 +1412,13 @@ html {
         display: none;
     }
 
-   
+    .header__navigation_list {
+        gap: 0;
+
+    }
+    .header__burger-menu {
+        display: block;
+    
 }
 
 @media (max-width: 768px) {
@@ -1464,10 +1475,7 @@ html {
         padding-left: 20px;
     }
 
-    .navigation__link {
-
-        margin-right: 20px;
-    }
+   
 
     .pay-and-feed__content {
         padding: 20px 20px 20px 20px;
@@ -1490,11 +1498,6 @@ html {
 
     .wrapper-greenblue__background::after {
         height: 341px;
-    }
-
-    .header__burger-menu {
-        display: block;
-
     }
 
     .navigation {
@@ -1522,9 +1525,47 @@ html {
         margin-bottom: 20px;
         transform: rotate(90deg);
     }
+
     .lines {
         display: none;
     }
+
+    .header__navigation.navigation {
+        height: 300px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+        bottom: -300px;
+    }
+
+    .header__navigation_list {
+        display: block;
+        margin-left: 0px;
+        text-align: center;
+        color: white;
+        background-color: #2A8086;
+        width: 100%;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .footer__navigation_list {
+        display: none;
+    }
+
+    .navigation__item.navigation__item_active {
+        list-style: none;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+    }
+
+    .navigation__item {
+        list-style: none;
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -1559,41 +1600,7 @@ html {
     .side-cameras__info-card:nth-child(2) {
         display: none;
     }
-    .header__navigation.navigation {
-        height: 300px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        z-index: -1;
-        bottom: -300px;
-    }
 
-    .header__navigation_list {
-        display: block;
-        margin-left: 0px;
-        text-align: center;
-        color: white;
-        background-color: #2A8086;
-        width: 100%;
-        justify-content: space-between;
-        padding: 15px 0;
-    }
-
-    .footer__navigation_list {
-        display: none;
-    }
-
-    .navigation__item.navigation__item_active {
-        list-style: none;
-        margin-bottom: 30px;
-        font-size: 1.5rem;
-    }
-
-    .navigation__item {
-        list-style: none;
-        margin-bottom: 30px;
-        font-size: 1.5rem;
-    }
 }
 
 
@@ -1635,10 +1642,12 @@ html {
         overflow: hidden;
         height: 117px;
         background-color: #2A8086;
-        ;
+
     }
 
-    
+    .header__burger-menu {
+        display: block;
+    }
 
 }
 
