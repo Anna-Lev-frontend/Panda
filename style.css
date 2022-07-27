@@ -9,7 +9,7 @@ html {
 
 .header {
     display: flex;
-
+    z-index: 10;
     align-items: center;
     padding: 20px;
     width: 100%;
