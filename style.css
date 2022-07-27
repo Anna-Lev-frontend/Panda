@@ -1416,9 +1416,7 @@ html {
         gap: 0;
 
     }
-    .header__burger-menu {
-        display: block;
-    
+
 }
 
 @media (max-width: 768px) {
@@ -1475,7 +1473,10 @@ html {
         padding-left: 20px;
     }
 
-   
+    .navigation__link {
+
+        margin-right: 20px;
+    }
 
     .pay-and-feed__content {
         padding: 20px 20px 20px 20px;
@@ -1530,7 +1531,7 @@ html {
         display: none;
     }
 
-    .header__navigation.navigation {
+    /* .header__navigation.navigation {
         height: 300px;
         position: absolute;
         width: 100%;
@@ -1548,21 +1549,27 @@ html {
         width: 100%;
         justify-content: space-between;
         padding: 15px 0;
+    } */
+    
+    .header__burger-menu {
+        display: block;
     }
-
+    .header__navigation.navigation {
+        display: none;
+    }
     .footer__navigation_list {
         display: none;
     }
 
     .navigation__item.navigation__item_active {
         list-style: none;
-        margin-bottom: 16px;
+        margin-bottom: 30px;
         font-size: 1.5rem;
     }
 
     .navigation__item {
         list-style: none;
-        margin-bottom: 16px;
+        margin-bottom: 30px;
         font-size: 1.5rem;
     }
 
