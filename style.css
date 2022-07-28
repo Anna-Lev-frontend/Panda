@@ -78,7 +78,7 @@ html {
 
 .navigation__item {
     list-style-type: none;
-    margin-right: 20px;
+
 }
 
 .navigation__item_active {
@@ -91,12 +91,12 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    margin-right: 52px;
+
 }
 
 .header__navigation_list,
 .footer__navigation_list {
-    margin-left: 5px;
+    padding: 0;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -824,11 +824,10 @@ html {
 }
 
 .giant-pandas__arrow {
-    max-width: 42px;
-    width: 100%;
+
     border: none;
     background-color: #C5E1E6;
-    margin-left: 34px;
+    margin-left: 30px;
 }
 
 .giant-pandas__text {
@@ -950,16 +949,30 @@ html {
     font-size: 14px;
     line-height: 40px;
     color: #0D444D;
+    position: relative;
 }
 
 
 .navigation__fact-list {
-    list-style-type: none;
+
     padding: 0;
+    list-style-type: none;
+
+}
+
+.navigation__fact-item::after {
+    background-image: url(./images/ul.svg);
+    content: "";
+    width: 13px;
+    height: 16px;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+
 }
 
 .main__content {
-    padding-right: 75px;
+    padding-right: 10px;
 }
 
 .video {
@@ -1264,9 +1277,31 @@ html {
 
 }
 
+.Look-at-this-beautiful__image a {
+    width: 76px;
+    height: 73px;
+    display: block;
+    overflow: hidden;
+}
 
-
-
+.animals-panda {
+transform: translateX(0px);
+}
+.animals-gorilla {
+    transform: translateX(-260px) ;
+}
+.animals-eagle {
+    transform: translateX(-81px);
+}
+.animals-aligator {
+    transform: translateX(-348px);
+}
+.animals-elephant {
+    transform: translateX(-436px);  
+}
+.animals-lemur {
+    transform: translateX(0px);
+}
 @media (max-width: 1400px) {
     .animals-online__title {
         margin-top: 0;
@@ -1319,7 +1354,7 @@ html {
     .navigation__link {
         font-size: 18px;
         line-height: 20px;
-        margin-right: 20px;
+
     }
 
     .header__logo,
@@ -1417,6 +1452,26 @@ html {
 
     }
 
+    .header__burger-menu {
+        display: block;
+    }
+
+    .header__navigation.navigation {
+        display: none;
+    }
+
+    .footer__navigation_list {
+        display: none;
+    }
+
+    .header__buttons {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1473,10 +1528,6 @@ html {
         padding-left: 20px;
     }
 
-    .navigation__link {
-
-        margin-right: 20px;
-    }
 
     .pay-and-feed__content {
         padding: 20px 20px 20px 20px;
@@ -1505,9 +1556,7 @@ html {
         justify-content: space-between;
     }
 
-    .header__buttons {
-        display: none;
-    }
+
 
     .Look-at-this-beautiful__info-card:nth-child(7) {
         display: none;
@@ -1517,10 +1566,7 @@ html {
         padding: 5px;
     }
 
-    .header {
-        position: relative;
-        justify-content: space-between;
-    }
+
 
     .info-card__vector {
         margin-bottom: 20px;
@@ -1550,16 +1596,8 @@ html {
         justify-content: space-between;
         padding: 15px 0;
     } */
-    
-    .header__burger-menu {
-        display: block;
-    }
-    .header__navigation.navigation {
-        display: none;
-    }
-    .footer__navigation_list {
-        display: none;
-    }
+
+
 
     .navigation__item.navigation__item_active {
         list-style: none;
@@ -1569,7 +1607,7 @@ html {
 
     .navigation__item {
         list-style: none;
-        margin-bottom: 30px;
+
         font-size: 1.5rem;
     }
 
@@ -1606,6 +1644,10 @@ html {
 
     .side-cameras__info-card:nth-child(2) {
         display: none;
+    }
+
+    .video {
+        width: 70vw
     }
 
 }
@@ -1645,9 +1687,7 @@ html {
         background-color: #2A8086;
     }
 
-    .header__burger-menu {
-        display: block;
-    }
+
 }
 
 @media (max-width: 330px) {
