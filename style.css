@@ -1354,10 +1354,10 @@ html {
     text-align: center;
 }
 
-.input.left, input.right,
-.span.left, span.right {
+input.left, input.right,
+span.left, span.right {
     position: absolute;
-    top:-20px
+    top:-20px;
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -1365,22 +1365,22 @@ html {
 
 }
 
-.span.left, span.right {
+span.left, span.right {
     pointer-events: none;
     color: #4c4c4c;
     font-size: 20px;
     text-shadow: 1px 1px 1px #737373;
 }
 
-.input.left, span.left {
+input.left, span.left {
     left:0;
 
 }
-.input.right, span.right {
+input.right, span.right {
     right:0;
 }
 
-.input.left.input.right {
+input.left, input.right {
     opacity: 0;
 }
 .left:checked ~ .dog {
