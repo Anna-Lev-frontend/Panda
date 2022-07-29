@@ -1285,23 +1285,66 @@ html {
 }
 
 .animals-panda {
-transform: translateX(0px);
+    transform: translateX(0px);
 }
+
 .animals-gorilla {
-    transform: translateX(-260px) ;
+    transform: translateX(-260px);
 }
+
 .animals-eagle {
     transform: translateX(-81px);
 }
+
 .animals-aligator {
     transform: translateX(-348px);
 }
+
 .animals-elephant {
-    transform: translateX(-436px);  
+    transform: translateX(-436px);
 }
+
 .animals-lemur {
     transform: translateX(0px);
 }
+
+.moon {
+    width: 250px;
+    height: 250px;
+    border-radius: 1px solod rgba (0.0.0.0.3);
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #d8d8d8;
+    box-shadow: inset 15px 15 10px #999;
+}
+
+.panda {
+    position: absolute;
+    top 40%;
+     left: 50%;
+     background: transparent url("./images/Panda-animation.png") 0 0 no-repeat;
+     width: 250px;
+     height: 159px;
+     transform: translate(-50%, -50%);
+     margin: 2em auto;
+     animation: run is infinite;
+}
+
+.p loading {
+    width: 100%;
+    height: 10px;
+    font-family: 'monospace';
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    color: #4c4c4c;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #737373;
+    text-align: center;
+}
+
 @media (max-width: 1400px) {
     .animals-online__title {
         margin-top: 0;
