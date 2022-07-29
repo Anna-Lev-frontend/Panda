@@ -1323,8 +1323,7 @@ html {
 
 .panda {
     position: absolute;
-  
-    top: 54%;
+    top: 10%;
     left: 50%;
     border-bottom-style: 35%;
     background: transparent url("./animation/animation.png") 0 0 no-repeat;
@@ -1334,6 +1333,7 @@ html {
     margin: 2em auto;
     animation: run is infinite;
 }
+
 /* 
 .p loading {
     width: 100%;
