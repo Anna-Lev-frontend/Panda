@@ -1308,9 +1308,10 @@ html {
     transform: translateX(0px);
 }
 
-.moon {
+/* .moon {
     width: 250px;
     height: 250px;
+    bottom: 35%;
     border-radius: 1px solod rgba (0.0.0.0.3);
     position: absolute;
     border-radius: 50%;
@@ -1318,20 +1319,22 @@ html {
     transform: translate(-50%, -50%);
     background: #d8d8d8;
     box-shadow: inset 15px 15 10px #999;
-}
+} */
 
 .panda {
     position: absolute;
-    top 40%;
-     left: 50%;
-     background: transparent url("./images/Panda-animation.png") 0 0 no-repeat;
-     width: 250px;
-     height: 159px;
-     transform: translate(-50%, -50%);
-     margin: 2em auto;
-     animation: run is infinite;
+  
+    top: 54%;
+    left: 50%;
+    border-bottom-style: 35%;
+    background: transparent url("./animation/animation.png") 0 0 no-repeat;
+    width: 178px;
+    height: 155px;
+    transform: translate(-50%, 100%);
+    margin: 2em auto;
+    animation: run is infinite;
 }
-
+/* 
 .p loading {
     width: 100%;
     height: 10px;
@@ -1343,7 +1346,7 @@ html {
     font-size: 20px;
     text-shadow: 1px 1px 1px #737373;
     text-align: center;
-}
+} */
 
 @media (max-width: 1400px) {
     .animals-online__title {
