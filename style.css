@@ -1336,6 +1336,29 @@ html {
     transform: translateX(0px);
 }
 
+.giant-pandas__navigation_list a {
+    width: 76px;
+    height: 73px;
+    display: block;
+    overflow: hidden;
+}
+
+.navigation__list_animals-panda {
+    transform: translateX(0px);
+}
+
+.navigation__list_animals-eagle {
+    transform: translateX(-81px);
+}
+
+.navigation__list_animals-gorila {
+    transform: translateX(-260px);
+}
+
+.navigation__list_animals-aligator {
+    transform: translateX(-348px);
+}
+
 
 @media (max-width: 1400px) {
     .animals-online__title {
