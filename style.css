@@ -1760,6 +1760,12 @@ html {
     .donate__illustration {
         bottom: -25px;
     }
+    .main__information {
+        padding: 10px;
+    }
+    .main__fact {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -1777,4 +1783,5 @@ html {
     .donate__illustration {
         bottom: -20px;
     }
+    
 }
