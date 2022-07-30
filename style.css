@@ -385,18 +385,18 @@ html {
     height: 155px;
     transform: translate(-50%, -50%);
     margin: 2em auto;
-    animation: run 1s steps(21) infinite;
+    animation: run 1s steps(2) infinite;
 }
 
 @keyframes run {
-    0% {
+    from {
         background-position: 0, 0;
         transform: translateX(0);
     }
 
-    100% {
-        background-position: 6000px, 0;
-        transform: translateX(0);
+    to {
+        background-position: -1100px, 0;
+        transform: translateX(0px);
     }
 
 }
