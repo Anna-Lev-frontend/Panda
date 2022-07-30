@@ -385,17 +385,18 @@ html {
     height: 155px;
     transform: translate(-50%, -50%);
     margin: 2em auto;
-    animation: run 1s steps(2) infinite;
+    animation: run 1s steps(21) infinite;
 }
 
 @keyframes run {
-
-    from {
+    0% {
         background-position: 0, 0;
+        transform: translateX(0);
     }
 
-    to {
-        background-position: -1100px, 0;
+    100% {
+        background-position: 6000px, 0;
+        transform: translateX(0);
     }
 
 }
@@ -1530,114 +1531,115 @@ html {
         position: relative;
         justify-content: space-between;
     }
+
     donate__illustration {
         bottom: -60px;
-}
-
-@media (max-width: 768px) {
-    .animals-online__title br {
-        display: none;
     }
 
-    .animals-online {
-        padding: 10px 10px;
-        flex-direction: column;
-        align-items: center;
-    }
+    @media (max-width: 768px) {
+        .animals-online__title br {
+            display: none;
+        }
 
-    .animals-online__photo {
-        display: none;
-    }
+        .animals-online {
+            padding: 10px 10px;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .animals-online__content {
-        padding: 5px 5px 45px 5px;
-    }
+        .animals-online__photo {
+            display: none;
+        }
 
-    .pets-in-zoo__title,
-    .pay-and-feed__title,
-    .testimonials__title,
-    .Look-at-this-beautiful-animals__title {
-        font-size: 16px;
-        padding-left: 40px;
-    }
+        .animals-online__content {
+            padding: 5px 5px 45px 5px;
+        }
 
-    .how-it-works__title {
-        padding-top: 40px;
-        font-size: 16px;
-        padding-left: 40px;
-    }
+        .pets-in-zoo__title,
+        .pay-and-feed__title,
+        .testimonials__title,
+        .Look-at-this-beautiful-animals__title {
+            font-size: 16px;
+            padding-left: 40px;
+        }
 
-    .pets-in-zoo__button,
-    .testimonials__button {
-        font-size: 12px;
-        line-height: 16px;
-        height: 40px;
-    }
+        .how-it-works__title {
+            padding-top: 40px;
+            font-size: 16px;
+            padding-left: 40px;
+        }
 
-    .pay-and-feed__button {
+        .pets-in-zoo__button,
+        .testimonials__button {
+            font-size: 12px;
+            line-height: 16px;
+            height: 40px;
+        }
 
-        font-size: 12px;
-        line-height: 16px;
-        max-width: 300px;
-    }
+        .pay-and-feed__button {
 
-    .header__logo,
-    .footer__logo {
-        width: 82px;
-        margin-right: 0;
-        padding-left: 20px;
-    }
+            font-size: 12px;
+            line-height: 16px;
+            max-width: 300px;
+        }
 
-
-    .pay-and-feed__content {
-        padding: 20px 20px 20px 20px;
-    }
-
-    .footer__about-site {
-        size: 10px;
-    }
-
-    .info-card__text {
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 10px;
-        margin-top: 10px;
-    }
-
-    .how-it-works__content {
-        padding: 5px 20px 5px 20px;
-    }
-
-    .wrapper-greenblue__background::after {
-        height: 341px;
-    }
-
-    .navigation {
-        justify-content: space-between;
-    }
+        .header__logo,
+        .footer__logo {
+            width: 82px;
+            margin-right: 0;
+            padding-left: 20px;
+        }
 
 
+        .pay-and-feed__content {
+            padding: 20px 20px 20px 20px;
+        }
 
-    .Look-at-this-beautiful__info-card:nth-child(7) {
-        display: none;
-    }
+        .footer__about-site {
+            size: 10px;
+        }
 
-    .Look-at-this-beautiful__content {
-        padding: 5px;
-    }
+        .info-card__text {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 10px;
+            margin-top: 10px;
+        }
+
+        .how-it-works__content {
+            padding: 5px 20px 5px 20px;
+        }
+
+        .wrapper-greenblue__background::after {
+            height: 341px;
+        }
+
+        .navigation {
+            justify-content: space-between;
+        }
 
 
 
-    .info-card__vector {
-        margin-bottom: 20px;
-        transform: rotate(90deg);
-    }
+        .Look-at-this-beautiful__info-card:nth-child(7) {
+            display: none;
+        }
 
-    .lines {
-        display: none;
-    }
+        .Look-at-this-beautiful__content {
+            padding: 5px;
+        }
 
-    /* .header__navigation.navigation {
+
+
+        .info-card__vector {
+            margin-bottom: 20px;
+            transform: rotate(90deg);
+        }
+
+        .lines {
+            display: none;
+        }
+
+        /* .header__navigation.navigation {
         height: 300px;
         position: absolute;
         width: 100%;
@@ -1659,129 +1661,135 @@ html {
 
 
 
-    .navigation__item.navigation__item_active {
-        list-style: none;
-        margin-bottom: 30px;
-        font-size: 1.5rem;
-    }
+        .navigation__item.navigation__item_active {
+            list-style: none;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+        }
 
-    .navigation__item {
-        list-style: none;
+        .navigation__item {
+            list-style: none;
 
-        font-size: 1.5rem;
-    }
-    .donate__illustration {
-        bottom: -45px
-}
+            font-size: 1.5rem;
+        }
 
-@media (max-width: 640px) {
-    .how-it-works__content {
-        flex-direction: column;
-    }
+        .donate__illustration {
+            bottom: -45px
+        }
 
-    .info-card {
-        margin-bottom: 20px;
-    }
+        @media (max-width: 640px) {
+            .how-it-works__content {
+                flex-direction: column;
+            }
 
-    .how-it-works__title {
-        margin-bottom: 20px;
-    }
+            .info-card {
+                margin-bottom: 20px;
+            }
 
-    .pay-and-feed__content {
-        flex-direction: column;
-    }
+            .how-it-works__title {
+                margin-bottom: 20px;
+            }
 
-    .feedback {
-        padding: 20px;
-    }
+            .pay-and-feed__content {
+                flex-direction: column;
+            }
 
-    .testimonials__feedback {
-        flex-direction: column;
-    }
+            .feedback {
+                padding: 20px;
+            }
 
-    .Look-at-this-beautiful__info-card:nth-child(6) {
-        display: none;
-    }
+            .testimonials__feedback {
+                flex-direction: column;
+            }
 
-    .side-cameras__info-card:nth-child(2) {
-        display: none;
-    }
+            .Look-at-this-beautiful__info-card:nth-child(6) {
+                display: none;
+            }
 
-    .video {
-        width: 70vw
-    }
-    .donate__illustration {
-        bottom: -35px;
-    }
-}
+            .side-cameras__info-card:nth-child(2) {
+                display: none;
+            }
 
-@media (max-width: 480px) {
-    .wrapper-greenblue__background::after {
-        height: 386px;
-    }
+            .video {
+                width: 70vw
+            }
 
-    .Look-at-this-beautiful__info-card:nth-child(5) {
-        display: none;
-    }
+            .donate__illustration {
+                bottom: -35px;
+            }
+        }
 
-    .Look-at-this-beautiful__info-card:nth-child(4) {
-        display: none;
-    }
+        @media (max-width: 480px) {
+            .wrapper-greenblue__background::after {
+                height: 386px;
+            }
 
-    .testimonials__header {
-        flex-direction: column;
-    }
+            .Look-at-this-beautiful__info-card:nth-child(5) {
+                display: none;
+            }
 
-    .pay-and-feed__header {
-        flex-direction: column;
-    }
+            .Look-at-this-beautiful__info-card:nth-child(4) {
+                display: none;
+            }
 
-    .pets-in-zoo__header {
-        flex-direction: column;
-    }
+            .testimonials__header {
+                flex-direction: column;
+            }
 
-    .main__section {
-        flex-direction: column;
-    }
+            .pay-and-feed__header {
+                flex-direction: column;
+            }
 
-    .main__navigation {
-        overflow: hidden;
-        height: 117px;
-        background-color: #2A8086;
-    }
+            .pets-in-zoo__header {
+                flex-direction: column;
+            }
 
-    .giant-pandas__navigation_list {
-        display: flex;
-        width: 100%;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .donate__illustration {
-        bottom: -25px;
-    }
-    .main__information {
-        padding: 10px;
-    }
-    .main__fact {
-        padding: 10px;
-    }
-}
+            .main__section {
+                flex-direction: column;
+            }
 
-@media (max-width: 330px) {
-    .wrapper-greenblue__background::after {
-        height: 450px;
-    }
+            .main__navigation {
+                overflow: hidden;
+                height: 117px;
+                background-color: #2A8086;
+            }
 
-    .Look-at-this-beautiful__info-card:nth-child(4) {
-        display: none;
-    }
+            .giant-pandas__navigation_list {
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-    .Look-at-this-beautiful__info-card:nth-child(3) {
-        display: none;
-    }
-    .donate__illustration {
-        bottom: -20px;
-    }
-    
-}
+            .donate__illustration {
+                bottom: -25px;
+            }
+
+            .main__information {
+                padding: 10px;
+            }
+
+            .main__fact {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 330px) {
+            .wrapper-greenblue__background::after {
+                height: 450px;
+            }
+
+            .Look-at-this-beautiful__info-card:nth-child(4) {
+                display: none;
+            }
+
+            .Look-at-this-beautiful__info-card:nth-child(3) {
+                display: none;
+            }
+
+            .donate__illustration {
+                bottom: -20px;
+            }
+
+        }

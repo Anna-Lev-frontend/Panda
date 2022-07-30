@@ -505,3 +505,28 @@ body {
     transform: scale(1.15, 0.3) translateY(-27px);
   }
 } */
+
+/* .panda {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  background: transparent url('./animation/animation.png') 0 0 no-repeat;
+  width: 203px;
+  height: 155px;
+  transform: translate(-50%, -50%);
+  margin: 2em auto;
+  animation: run 1s steps(2) infinite;
+}
+
+@keyframes run {
+
+  from {
+      background-position: 0, 0;
+  }
+
+  to {
+      background-position: -1100px, 0;
+  }
+
+} */
