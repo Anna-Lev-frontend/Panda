@@ -1530,6 +1530,8 @@ html {
         position: relative;
         justify-content: space-between;
     }
+    donate__illustration {
+        bottom: -60px;
 }
 
 @media (max-width: 768px) {
@@ -1668,7 +1670,8 @@ html {
 
         font-size: 1.5rem;
     }
-
+    .donate__illustration {
+        bottom: -45px
 }
 
 @media (max-width: 640px) {
@@ -1707,7 +1710,9 @@ html {
     .video {
         width: 70vw
     }
-
+    .donate__illustration {
+        bottom: -35px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1745,7 +1750,16 @@ html {
         background-color: #2A8086;
     }
 
-
+    .giant-pandas__navigation_list {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .donate__illustration {
+        bottom: -25px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -1759,5 +1773,8 @@ html {
 
     .Look-at-this-beautiful__info-card:nth-child(3) {
         display: none;
+    }
+    .donate__illustration {
+        bottom: -20px;
     }
 }
