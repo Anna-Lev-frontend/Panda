@@ -1,15 +1,15 @@
-html,
+/* html,
 body {
     height: 100%;
 }
 
 body {
     --fps: 24;
-    background: #eee;
+    background: #EEE;
     overflow: hidden;
 }
 
-/* .sprite {
+.sprites {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,41 +26,102 @@ body {
         transform: translateZ(0);
         top: 0;
         left: 0;
-        animationL calc(var(:-ms-fullscreenframes) / var(--fps) * 1s) var(--keyframes) infinite step-end;
+        animation: calc(var(--frames) / var(--fps) * 1s) var(--keyframes) infinite step-end;
     }
-} */
-
-
-.catSprite {
-    --width: 408px;
-    --height: 199px;
-    --frames: 13;
-    --keyframes: catSpriteAnim;
-    margin: 0;
-    top: auto;
-    bottom: -2%;
-    animation: 1.5s catSprite infinite linear;
 }
 
-@keyframes catSpriteAnim {
-    @inclube spriteKeyframes($catSprite,
-        null);
+
+input {
+    @for $i from 1 through 4 {
+        &#s#{$i}:checked {
+            ~label:nth-of-type(#{$i}) {
+                box-shadow: 2px 4px rgba(0, 0, 0, .1) inset, 0 0 0 200px rgba(0, 0, 0, .2) inset;
+            }
+
+            ~.sprites .sprite:nth-child(#{$i}) {
+                display: block;
+            }
+        }
+    }
 }
 
-@keyframes catSprite {
-    0% {
+label {
+    display: inline-block;
+    background: #15B0ED;
+    color: #FFF;
+    padding: .6em 1em;
+    margin: .5em;
+    border-radius: 5px;
+    box-shadow: 0 -4px rgba(0, 0, 0, .2) inset;
+    cursor: pointer;
+
+    &:hover { background: #34BDEF;
+    }
+}
+
+$catSprite: (
+    W:408,
+    H:199,
+    rows:13,
+    cols:1,
+    frames:13
+);
+
+@mixin spriteKeyframes($s, $mode) {
+    calc the "jump" relative to number of frames
+    $jump: 100 / (map-get($s, frames));
+    frame index
+    $frame: 0;
+
+    $rows: if($mode =="vertical", map-get($s, cols) + 1, map-get($s, rows) + 1);
+    $cols: if($mode =="vertical", map-get($s, rows) + 1, map-get($s, cols) + 1);
+
+    @if map-get($s, startFrame) > 0 {
+    }
+
+    @for $row from 1 to $rows {
+        @for $col from 1 to $cols {
+            $frame : $frame + 1;
+
+            #{$frame * $jump}% {
+                top :#{($row - 1) * map-get($s, H) * -1 + 'px'};
+                left:#{($col - 1) * map-get($s, W) * -1 + 'px'};
+            }
+        }
+    }
+}
+
+    .catSprite {
+        --width: 408px;
+        --height: 199px;
+        --frames: 13;
+        --keyframes: catSpriteAnim;
+        margin: 0;
         right: 0;
-        transform: translateX(100%);
+        left: auto;
+        top: auto;
+        bottom: -2%;
+        animation: 1.5s catSprint infinite linear;
     }
 
-    70%,
-    100% {
-        right: 100%;
-        transform: none;
+    @keyframes catSpriteAnim {
+        @include spriteKeyframes($catSprite, null);
     }
-}
 
-/* .moon {
+    @keyframes catSprint {
+        0% {
+            right: 0;
+            transform: translateX(100%);
+        }
+
+        70%,
+        100% {
+            right: 100%;
+            transform: none;
+        }
+    } */
+
+    /* .moon {
     width: 250px;
     height: 250px;
     bottom: 35%;
@@ -74,7 +135,7 @@ body {
     display: block;
 } */
 
-/* .panda {
+    /* .panda {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -140,7 +201,9 @@ input.left, input.right {
     transform: translate(-50% -50%) rotateY(180deg);
 } */
 
-/* .sprite {
+
+
+    .sprite {
     width: 245px;
     height: 400px;
     display: block;
@@ -152,4 +215,4 @@ input.left, input.right {
 @keyframes walker {
     from {background-position: 0 0;}
     to {background-position: 0 -4000px;}
-} */
+}
