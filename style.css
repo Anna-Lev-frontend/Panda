@@ -304,8 +304,42 @@ html {
 }
 
 .info-card__image img {
-    width: 50px;
+    width: 55px;
     height: 50px;
+    display: block;
+    overflow: hidden;
+}
+
+
+.icons-binoculars {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-how-its-work.png");
+    background-position-x: 0px;
+}
+.icons-dog-paw-print {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-how-its-work.png");
+    background-position-x: -67px;
+}
+.icons-trusts {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-how-its-work.png");
+    background-position-x: -130px;
+}
+.icons-pay {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-pay-and-feed.png");
+    background-position-x: 0px;
+}
+.icons-trust {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-pay-and-feed.png");
+    background-position-x: -67px;
+}
+.icons-monkey {
+    transform: translateX(0px);
+    background-image: url("./images/sprite-pay-and-feed.png");
+    background-position-x: -133px;
 }
 
 .info-card__text {
@@ -1358,7 +1392,6 @@ html {
 .navigation__list_animals-aligator {
     transform: translateX(-348px);
 }
-
 
 @media (max-width: 1400px) {
     .animals-online__title {
