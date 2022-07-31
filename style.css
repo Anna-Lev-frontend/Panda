@@ -303,25 +303,29 @@ html {
     align-items: center;
 }
 
-.info-card__image img {
+.icons-binoculars {
     width: 55px;
     height: 50px;
     display: block;
     overflow: hidden;
-}
-
-
-.icons-binoculars {
     transform: translateX(0px);
     background-image: url("./images/sprite-how-its-work.png");
     background-position-x: 0px;
 }
 .icons-dog-paw-print {
+    width: 55px;
+    height: 49px;
+    display: block;
+    overflow: hidden;
     transform: translateX(0px);
     background-image: url("./images/sprite-how-its-work.png");
     background-position-x: -67px;
 }
 .icons-trusts {
+    width: 55px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
     transform: translateX(0px);
     background-image: url("./images/sprite-how-its-work.png");
     background-position-x: -130px;
@@ -330,16 +334,28 @@ html {
     transform: translateX(0px);
     background-image: url("./images/sprite-pay-and-feed.png");
     background-position-x: 0px;
+    width: 64px;
+    height: 55px;
+    display: block;
+    overflow: hidden;
 }
 .icons-trust {
     transform: translateX(0px);
     background-image: url("./images/sprite-pay-and-feed.png");
     background-position-x: -67px;
+    width: 64px;
+    height: 55px;
+    display: block;
+    overflow: hidden;
 }
 .icons-monkey {
     transform: translateX(0px);
     background-image: url("./images/sprite-pay-and-feed.png");
     background-position-x: -133px;
+    width: 55px;
+    height: 55px;
+    display: block;
+    overflow: hidden;
 }
 
 .info-card__text {
